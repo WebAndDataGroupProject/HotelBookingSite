@@ -1,122 +1,126 @@
-/* background set */
-body {
-  background-color:#283149;
+/************ BODY ***********/
+.background {
+  background-color: #283149;
 }
-
-/****************** START CENTER COLUMN ******************/
-div.centercolumn {
+.background2 {
+  background-color: #DBEDF3;
+}
+.header {
   max-width: 1000px;
   min-width: 500px;
   margin: auto;
 }
-/****************** END CENTER COLUMN ******************/
+/************ BODY ***********/
 
-
-
-
-
-/****************** START NAVBAR ******************/
-
-  /****************** START HORIZONTAL MENU ******************/
-  ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 5px;
-      height: 50px;
-      background-color:#404B69;
-  }
-
-  li {
-      float: left;
-  }
-
-  li.navbar {
-      padding: 15px 15px 15px 15px;
-      text-decoration: none;
-      list-style: none;
-      font-size: 16px;
-      min-width: 100px;
-  }
-  
-  li a {
-    display: block;
+/************ HEADER BAR ***********/
+ul {
+  margin: 0;
+  padding: 0;
+}
+.NavBar {
+  background-color: #283149;
+  height: 50px;
+}
+  /************ HOME ICON **********/
+  .HomeIcon {
     color: #DBEDF3;
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+  }
+  /************ HOME ICON **********/
+  
+  /************ NAV CONTENT **********/
+  .NavContent {
+    list-style: none;
+    width: 100px;
+    height: 40px;
+    vertical-align: middle;
+    margin: 10px 0px 0px 0px;
+  }
+  .Active {
+    background-color: #404B69;
+  }
+  .NavContentLeft {
+    float: left;
+  }
+  .NavContentRight {
+    float: right;
+  }
+  .NavText {
+    font-size: 16px;
     text-align: center;
     vertical-align: middle;
-    text-decoration: none;
-    height: 20px;
-  }
-  
-  /****************** START HOME BUTTON ******************/
-  i.home {
-    color: #BFCFD4;
-    font-size: 40px;
-    padding: 5px;
-    vertical-align: center;
-    display: block;
-  }
-  /****************** END HOME BUTTON ******************/
-  
-  li.search {
-    display: block;
     color: #DBEDF3;
-    text-align: center;
-    text-decoration: none;
   }
-  li.search:hover {
+  .HomeBlock {
+    padding: 14.5px 28.5px;
+    margin: 0;
+  }
+  .SearchBlock{
+    padding: 14.5px 24.5px;
+    margin: 0;
+  }
+  .NavText:Hover {
     background-color: #DA0463;
-  }
-
-  /****************** END HORIZONTAL MENU ******************/
-
-  /****************** START MY ACCOUNT DROPDOWN ******************/
-  li.myaccount {
-    float:right;
-    list-style-type:none;
-  }
-
-  .dropbtn {
-    background-color: #404B69;
     color: #DBEDF3;
-    font-size: 16px;
-    border: none;
-    min-width: 100px;
   }
-
+  /************ NAV CONTENT **********/
+  
+  /************ MY ACCOUNT *********/
   .dropdown {
     position: relative;
-    float: right;
     display: inline-block;
+    float: right;
+    width: 170px;
+    height: 50px;
+    vertical-align: middle;
   }
-
+  .dropbtn {
+    background-color: #283149;
+    color: #DBEDF3;;
+    padding: 13.58px 43.5px;
+    font-size: 16px;
+    border: none;
+  }
   .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: 100px;
+    min-width: 170px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
   }
-
   .dropdown-content a {
-    color: #DBEDF3;
+    color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    background-color: #DA0463;
+    color: #DBEDF3;
   }
-
+  .dropdown-content a:hover {
+    background-color: #283149;
+    color: #DBEDF3;
+  }
   .dropdown:hover .dropdown-content {
     display: block;
-    background-color:#DA0463;
   }
+  .dropdown:hover .dropbtn {
+    background-color: #DA0463;;
+  }
+  /************ MY ACCOUNT *********/
+/****************** HEADER BAR ********************/
+/************** JUMBOTRON **************/
   
-  a.myaccount {
-    color: #DBEDF3;
-    font-size: 12px;
-  }
-  
-  a.myaccount:hover {
-    background-color: #283149;
-  }
-  /****************** END MY ACCOUNT DROPDOWN ******************/
+/************** JUMBOTRON **************/
 
-/****************** END NAVBAR ******************/
 
+
+    
+/* Add a gray background color and some padding to the footer */
+footer {
+  background-color: #f2f2f2;
+  padding: 25px;
+}
