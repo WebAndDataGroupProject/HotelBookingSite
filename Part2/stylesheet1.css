@@ -4,11 +4,22 @@
 }
 .background2 {
   background-color: #DBEDF3;
+  padding: 50px 0;
+  height: 400px;
+}
+.background3 {
+  background-color: #DBEDF3;
+  min-width: 500px;
+  max-width: 1000px;
+  margin: auto;
 }
 .header {
   max-width: 1000px;
   min-width: 500px;
   margin: auto;
+}
+br {
+  clear: both;
 }
 /************ BODY ***********/
 
@@ -112,12 +123,109 @@ ul {
   }
   /************ MY ACCOUNT *********/
 /****************** HEADER BAR ********************/
-/************** JUMBOTRON **************/
+
+/************** SEARCH BAR **************/
+.SearchContentOuter {
+  /* RGB(64,75,105) converts to #404B69*/
+  background-color: rgba(64,75,105,0.8);
+  margin: auto;
+  min-width: 500px;
+  max-width: 1000px;
+  height: 300px;
+}
+.SearchContentInner {
+  padding: 76px 20px;
+}
+.SearchContentFont {
+  color: #DBEDF3;
+  float: left;
+  padding: 5px 0;
+  font-size: 16px;
+}
+  /********************* DESTINATION LINE *******************/
+  .SearchButton {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgba(40,49,73,0.8);
+    color: #DBEDF3;
+    border: none;
+    padding: 5px 32px;
+    float: left;
+  }
+  .icon {
+    float: left;
+    font-size: 22.85px;
+    position: relative;
+    left: 50px;
+    top: 5px;
+    color: rgba(64,75,105,0.8);;
+  }
+  /* DOUBLE BLOCK FOR THE ICON */
+  .DestinationBlock {
+    display: inline-block;
+    width: 350px;
+    border: 0px;
+    border-radius: 0px;
+    font-size: 16px;
+    background-color: #DBEDF3;
+    height: 32.85px;
+    float: left;
+    margin: 0 0 0 15px;
+  }
+  .DestinationInputBlock {
+    width: 300px;
+    margin: 0 0 0 50px;
+    color: rgba(64,75,105,0.8);
+  }
+  /********************* DESTINATION LINE *******************/
   
-/************** JUMBOTRON **************/
+  /********************* CHECKINOUT LINE *******************/
+  .CheckinOutBlock {
+    font-size: 16px;
+    color: rgba(64,75,105,0.8);
+    background-color: #DBEDF3;
+    float: left;
+    display: inline-block;
+    height: 32.85px;
+    width: 184px;
+    border: 0px;
+    border-radius: 0px;
+    margin: 0 0 0 20px;
+  }
+  .CheckInOutInputBlock {
+    width: 150px;
+    margin: 0 0 0 35px;
+    color: rgba(64,75,105,0.8);
+  }
 
+  #CheckOut {
+    margin: 0 0 0 20px;
+  }
+  /********************* CHECKINOUT LINE *******************/
+  
+  /********************* ROOMS LINE ***********************/
+  .Rooms {
+    font-size: 16px;
+    text-align: center;
+    color: rgba(64,75,105,0.8);
+    background-color: #DBEDF3;
+    float: left;
+    display: inline-block;
+    height: 32.85px;
+    width: 50px;
+    border: 0px;
+    border-radius: 0px;
+    margin: 0 20px 0 20px;
+  }
+  /********************* ROOMS LINE ***********************/
 
+/**************** SEARCH CONTENT ***************/
+/************** SEARCH BAR **************/
 
+/************** PROMOTIONS ***************/
+
+/************** PROMOTIONS ***************/
     
 /* Add a gray background color and some padding to the footer */
 footer {
