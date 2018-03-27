@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>home test</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="homeTest.css">
+</head>
+<body>
+
+	<!-- HEADER -->
+	<div id="header">
+		<h1>THIS IS THE HEADER</h1>
+		<button id="load" onclick="load_page()">load page</button>
+	</div>
+
+	<!-- CONTENT -->
+	<div id="content">
+		<h2>This it the content</h2>
+		<p>
+			For the home page. Press the load button to load the new html into the div.
+		</p>
+	</div>
+
+	<!-- script -->
+	<script type="text/javascript">
+		function load_page()
+		{
+			document.getElementById("content").innerHTML = '<object type= "text/html" data= "load.html"></object>';
+		}
+	</script>
+
+</body>
+</html>
