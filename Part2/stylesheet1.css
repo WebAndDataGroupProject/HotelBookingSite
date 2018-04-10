@@ -234,16 +234,6 @@ ul {
     border-radius: 0px;
     margin: 0 60.5px 0 15px;
   }
-  .dropdown {
-    
-  }
-  .dropdown-content {
-    
-  }
-  .dropdown-content:hover {
-    
-  }
-  
   /********************* ROOMS LINE ***********************/
   .NoMargin {
     margin: 0;
@@ -263,12 +253,6 @@ ul {
 
 /************** PROMOTIONS ***************/
     
-/* Add a gray background color and some padding to the footer */
-footer {
-  background-color: #f2f2f2;
-  padding: 25px;
-}
-
 /************** ACCOUNT PAGE ***************/
 .account {
    height: 88vh;
@@ -327,4 +311,17 @@ ul {
    background-color: #DBEDF3 !important;
    border-style: solid;
    border-color: #293149;
+}
+
+/******************* FOOTER ******************/
+footer {
+  background-color: white;
+  margin: auto;
+  min-height: 100px;
+}
+.column3 {
+  float: left;
+  width: 333px;
+  padding: 20px;
+  min-height: 100px;
 }
