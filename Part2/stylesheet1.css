@@ -24,7 +24,7 @@ br {
   clear: both;
 }
 embed {
-  height: 94vh;
+  height: 93.9vh;
   width: 100%;
   margin: 50px 0 0 0;
 }
@@ -271,7 +271,7 @@ footer {
 
 /************** ACCOUNT PAGE ***************/
 .account {
-   height: 80vh;
+   height: 88vh;
    padding-bottom: 10px;
 }
 
