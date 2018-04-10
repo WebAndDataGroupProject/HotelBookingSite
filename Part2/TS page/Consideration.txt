@@ -1,0 +1,1 @@
+- Need to have a have state cycle for users who are logged in, no longer show login/Sign up page in drop down

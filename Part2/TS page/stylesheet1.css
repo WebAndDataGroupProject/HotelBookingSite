@@ -1,0 +1,234 @@
+/************ BODY ***********/
+.background {
+  background-color: #283149;
+}
+.background2 {
+  background-color: #DBEDF3;
+  padding: 50px 0;
+  height: 400px;
+}
+.background3 {
+  background-color: #DBEDF3;
+  min-width: 500px;
+  max-width: 1000px;
+  margin: auto;
+}
+.header {
+  max-width: 1000px;
+  min-width: 500px;
+  margin: auto;
+}
+br {
+  clear: both;
+}
+/************ BODY ***********/
+
+/************ HEADER BAR ***********/
+ul {
+  margin: 0;
+  padding: 0;
+}
+.NavBar {
+  background-color: #283149;
+  height: 50px;
+}
+  /************ HOME ICON **********/
+  .HomeIcon {
+    color: #DBEDF3;
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+  }
+  /************ HOME ICON **********/
+  
+  /************ NAV CONTENT **********/
+  .NavContent {
+    list-style: none;
+    width: 100px;
+    height: 40px;
+    vertical-align: middle;
+    margin: 10px 0px 0px 0px;
+  }
+  .Active {
+    background-color: #404B69;
+  }
+  .NavContentLeft {
+    float: left;
+  }
+  .NavContentRight {
+    float: right;
+  }
+  .NavText {
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    color: #DBEDF3;
+  }
+  .HomeBlock {
+    padding: 14.5px 28.5px;
+    margin: 0;
+  }
+  .SearchBlock{
+    padding: 14.5px 24.5px;
+    margin: 0;
+  }
+  .NavText:Hover {
+    background-color: #DA0463;
+    color: #DBEDF3;
+  }
+  /************ NAV CONTENT **********/
+  
+  /************ MY ACCOUNT *********/
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+    width: 170px;
+    height: 50px;
+    vertical-align: middle;
+  }
+  .dropbtn {
+    background-color: #283149;
+    color: #DBEDF3;;
+    padding: 13.58px 43.5px;
+    font-size: 16px;
+    border: none;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 170px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: #DA0463;
+    color: #DBEDF3;
+  }
+  .dropdown-content a:hover {
+    background-color: #283149;
+    color: #DBEDF3;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown:hover .dropbtn {
+    background-color: #DA0463;;
+  }
+  /************ MY ACCOUNT *********/
+/****************** HEADER BAR ********************/
+
+/************** SEARCH BAR **************/
+.SearchContentOuter {
+  /* RGB(64,75,105) converts to #404B69*/
+  background-color: rgba(64,75,105,0.8);
+  margin: auto;
+  min-width: 500px;
+  max-width: 1000px;
+  height: 300px;
+}
+.SearchContentInner {
+  padding: 76px 20px;
+}
+.SearchContentFont {
+  color: #DBEDF3;
+  float: left;
+  padding: 5px 0;
+  font-size: 16px;
+}
+  /********************* DESTINATION LINE *******************/
+  .SearchButton {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgba(40,49,73,0.8);
+    color: #DBEDF3;
+    border: none;
+    padding: 5px 32px;
+    float: left;
+  }
+  .icon {
+    float: left;
+    font-size: 22.85px;
+    position: relative;
+    left: 50px;
+    top: 5px;
+    color: rgba(64,75,105,0.8);;
+  }
+  /* DOUBLE BLOCK FOR THE ICON */
+  .DestinationBlock {
+    display: inline-block;
+    width: 350px;
+    border: 0px;
+    border-radius: 0px;
+    font-size: 16px;
+    background-color: #DBEDF3;
+    height: 32.85px;
+    float: left;
+    margin: 0 0 0 15px;
+  }
+  .DestinationInputBlock {
+    width: 300px;
+    margin: 0 0 0 50px;
+    color: rgba(64,75,105,0.8);
+  }
+  /********************* DESTINATION LINE *******************/
+  
+  /********************* CHECKINOUT LINE *******************/
+  .CheckinOutBlock {
+    font-size: 16px;
+    color: rgba(64,75,105,0.8);
+    background-color: #DBEDF3;
+    float: left;
+    display: inline-block;
+    height: 32.85px;
+    width: 184px;
+    border: 0px;
+    border-radius: 0px;
+    margin: 0 0 0 20px;
+  }
+  .CheckInOutInputBlock {
+    width: 150px;
+    margin: 0 0 0 35px;
+    color: rgba(64,75,105,0.8);
+  }
+
+  #CheckOut {
+    margin: 0 0 0 35px;
+  }
+  /********************* CHECKINOUT LINE *******************/
+  
+  /********************* ROOMS LINE ***********************/
+  .Rooms {
+    font-size: 16px;
+    text-align: center;
+    color: rgba(64,75,105,0.8);
+    background-color: #DBEDF3;
+    float: left;
+    display: inline-block;
+    height: 32.85px;
+    width: 50px;
+    border: 0px;
+    border-radius: 0px;
+    margin: 0 35px 0 35px;
+  }
+  /********************* ROOMS LINE ***********************/
+
+/**************** SEARCH CONTENT ***************/
+/************** SEARCH BAR **************/
+
+/************** PROMOTIONS ***************/
+
+/************** PROMOTIONS ***************/
+    
+/* Add a gray background color and some padding to the footer */
+footer {
+  background-color: #f2f2f2;
+  padding: 25px;
+}
