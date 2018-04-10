@@ -14,7 +14,6 @@
   max-width: 1000px;
   margin: auto;
 }
-
 .header {
   min-width: 500px;
   max-width: 1000px;
@@ -236,7 +235,7 @@ ul {
   .darktext {
     color: #283149;
   }
-/******************* SEARCH FILTERS *********************/
+/******************* SEARCH PAGE *********************/
 .sf-container {
   width: 300px;
   min-height: 500px;
@@ -244,6 +243,26 @@ ul {
   padding: 20px;
   border-right: solid 20px;
   border-color: #283149;
+  float: left;
+  margin: auto;
+}
+.browse-container {
+  width: 700px;
+  min-height: 600px;
+  background-color: #DBEDF3;
+  border-color: #283149;
+  float: left;
+  margin: auto;
+}
+.sort-container {
+  height: 75px;
+  padding: 20px;
+  font-size: 16px;
+  border-bottom: solid 1px;
+  border-color: #283149;
+}
+.rooms-container {
+  
 }
 /************** PROMOTIONS ***************/
     
