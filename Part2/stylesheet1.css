@@ -248,3 +248,63 @@ footer {
   background-color: #f2f2f2;
   padding: 25px;
 }
+
+/************** ACCOUNT PAGE ***************/
+.account {
+   height: 80vh;
+   padding-bottom: 10px;
+}
+
+
+.personal-info {
+   padding-top: 0 auto;
+   float: left;
+   padding-bottom: 50px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #283149;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.business-info {
+   padding-top: 0 auto;
+   float: right;
+   padding-bottom: 50px;
+}
+
+.business-info p {
+   color: #283149;
+}
+
+.hotels {
+   padding-left: 80px;
+}
+
+.acc-title {
+   color: #283149;
+   font-weight: bold;
+}
+
+ul {
+   float: left;
+   list-style-type: none;
+}
+
+.btn, .btn-info {
+   color: #DBEDF3;
+   background-color: #283149 !important;
+   border-style: none;
+}
+
+.btn:hover, .btn-info:hover {
+   color: #283149;
+   background-color: #DBEDF3 !important;
+   border-style: solid;
+   border-color: #293149;
+}
