@@ -28,8 +28,9 @@ embed {
   width: 100%;
   margin: 50px 0 0 0;
 }
-/************ BODY ***********/
-
+h1, h2, h3, h4, h5, h6, p {
+  color: #283149;
+}
 /************ HEADER BAR ***********/
 ul {
   margin: 0;
@@ -49,7 +50,6 @@ ul {
     width: 50px;
     padding: 10px;
   }
-  /************ HOME ICON **********/
   
   /************ NAV CONTENT **********/
   .NavContent {
@@ -92,7 +92,6 @@ ul {
     background-color: #DA0463;
     color: #DBEDF3;
   }
-  /************ NAV CONTENT **********/
   
   /************ MY ACCOUNT *********/
   .dropdown {
@@ -138,11 +137,6 @@ ul {
   .dropdown:hover .dropbtn {
     background-color: #DA0463;;
   }
-  /************ MY ACCOUNT *********/
-/****************** HEADER BAR ********************/
-
-
-
 /************** SEARCH BAR **************/
 .SearchContentOuter {
   /* RGB(64,75,105) converts to #404B69*/
@@ -197,8 +191,6 @@ ul {
     padding: 0 0 0 32px;
     color: rgba(64,75,105,0.8);
   }
-  /********************* DESTINATION LINE *******************/
-  
   /********************* CHECKINOUT LINE *******************/
   .CheckinOutBlock {
     font-size: 16px;
@@ -218,8 +210,6 @@ ul {
   #CheckOut {
     margin: 0 0 0 15px;
   }
-  /********************* CHECKINOUT LINE *******************/
-  
   /********************* ROOMS LINE ***********************/
   .Rooms {
     font-size: 16px;
@@ -234,7 +224,7 @@ ul {
     border-radius: 0px;
     margin: 0 60.5px 0 15px;
   }
-  /********************* ROOMS LINE ***********************/
+  /********** MISC ***********/
   .NoMargin {
     margin: 0;
   }
@@ -246,11 +236,15 @@ ul {
   .darktext {
     color: #283149;
   }
-/**************** SEARCH CONTENT ***************/
-/************** SEARCH BAR **************/
-
-/************** PROMOTIONS ***************/
-
+/******************* SEARCH FILTERS *********************/
+.sf-container {
+  width: 300px;
+  min-height: 500px;
+  background-color: #DBEDF3;
+  padding: 20px;
+  border-right: solid 20px;
+  border-color: #283149;
+}
 /************** PROMOTIONS ***************/
     
 /************** ACCOUNT PAGE ***************/
@@ -258,14 +252,11 @@ ul {
    height: 88vh;
    padding-bottom: 10px;
 }
-
-
 .personal-info {
    padding-top: 0 auto;
    float: left;
    padding-bottom: 50px;
 }
-
 hr {
     display: block;
     height: 1px;
@@ -275,44 +266,36 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
-
 .business-info {
    padding-top: 0 auto;
    float: right;
    padding-bottom: 50px;
 }
-
 .business-info p {
    color: #283149;
 }
-
 .hotels {
    padding-left: 80px;
 }
-
 .acc-title {
    color: #283149;
    font-weight: bold;
 }
-
 ul {
    float: left;
    list-style-type: none;
 }
-
 .btn, .btn-info {
    color: #DBEDF3;
    background-color: #283149 !important;
    border-style: none;
 }
-
 .btn:hover, .btn-info:hover {
    color: #283149;
    background-color: #DBEDF3 !important;
    border-style: solid;
    border-color: #293149;
 }
-
 /******************* FOOTER ******************/
 footer {
   background-color: white;
@@ -321,7 +304,7 @@ footer {
 }
 .column3 {
   float: left;
-  width: 333px;
+  width: 333.3px;
   padding: 20px;
   min-height: 100px;
 }
