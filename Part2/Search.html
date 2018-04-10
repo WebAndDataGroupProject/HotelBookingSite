@@ -3,17 +3,63 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="stylesheet1.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
 </head>
 
 <body class="background">
-  <!--> MINIMUM SEARCH FILTERS: location, checkin, checkout, rooms, adults, children, rating, pricing, pool? gym? food+drinks?<-->
+  <!-- MINIMUM SEARCH FILTERS: location, checkin, checkout, rooms, adults, children, rating, pricing, amenities-->
+  <div class="background3">
+      <div class="SearchContentInner">
+        <label class="SearchContentFont darktext">Destination</label>
+          <i class="icon fas fa-map-marker-alt"></i>
+          <div class="DestinationBlock">
+            <input type="text" class="DestinationBlock DestinationInputBlock border" placeholder="Search...">
+          </div>
+        <input type="submit" class="SearchButton" value="Search">
+        <br><br>
+        <label class="SearchContentFont darktext">Check-in</label>
+          <i class="icon far fa-calendar-alt"></i>
+          <div class="CheckinOutBlock">
+            <input type="date" id="Checkin" class="CheckinOutBlock CheckInOutInputBlock border" onclick="CurrentDate()">
+          </div>
+        <label class="SearchContentFont darktext" id="CheckOut">Check-out</label>
+          <i class="icon far fa-calendar-alt"></i>
+          <div class="CheckinOutBlock">
+            <input type="date" id="Checkout" class="CheckinOutBlock CheckInOutInputBlock border" onclick="CurrentDate()">
+          </div>
+        <br><br>
+        <label class="SearchContentFont darktext">Rooms</label>
+          <select class="Rooms border">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        <label class="SearchContentFont darktext">Adults (18+)</label>
+          <select class="Rooms border">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+        <label class="SearchContentFont darktext">Children (0-17)</label>
+          <select class="Rooms border">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+        <br>
+      </div>
+  </div>
+  <!-- sort by -->
   
-  <!--> sort by <-->
-  
-  <!--> database hits <-->
+  <!-- database hits -->
   
   <footer class="container-fluid text-center">
     <p>Footer Text</p>
