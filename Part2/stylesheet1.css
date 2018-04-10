@@ -315,6 +315,119 @@ ul {
    border-style: solid;
    border-color: #293149;
 }
+<<<<<<< HEAD
+=======
+
+/******************* SIGN UP PAGE ******************/
+
+.SignupBackground{
+  background-color: #DBEDF3;
+  height: 500px;
+  padding: 10px;
+  /* background image */
+}
+
+.leftbox{
+    float: left;
+    
+    width:auto;
+    height:auto;
+    
+    margin-top: auto;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    margin-bottom: auto;
+    
+    background-color: #DBEDF3;
+}
+
+.rightbox{
+    float: right;
+    
+    width:auto;
+    height:auto;
+    
+    margin-top: auto;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    margin-bottom: auto;
+    
+    
+    background-color: #DBEDF3;
+}
+
+#loginbox{
+    
+    height:400px;
+    width:300px;
+
+    margin:auto;
+    border: 10px;
+    border-radius:25px;
+    background-color: #283149; 
+}
+.tabulatedheader{
+    height: 40px;
+}
+
+
+#left{
+    float: left;
+    
+    height: 40px;
+    width:150px;
+    
+    text-align: center;
+    color: aqua;
+    border-radius: 25px;
+    background: #73AD21;
+
+    font-size: 20px;
+}
+
+#right{
+    height: 40px;
+    float: right;
+    text-align: center;
+    color: aqua;
+    border-radius: 25px;
+    background: #73AD21;
+    width:150px;
+
+    font-size: 20px;
+
+}
+
+
+
+.SignUpContent{
+    height: auto;
+    width: auto;
+    margin-left: 35px;
+    font-size: 10pt;
+    color:floralwhite;
+}
+
+/******************* HOTEL PAGE ******************/
+
+.HotelPageBackground{
+  background-color: #DBEDF3;
+  height: 500px;
+  padding: 10px;
+  /* background image */
+}
+
+.floatingleft{
+    margin-left: 40px;
+}
+
+
+
+>>>>>>> 57ff29a1bbf18123d445d9ed5135177c2eb90397
 /******************* FOOTER ******************/
 footer {
   background-color: white;
