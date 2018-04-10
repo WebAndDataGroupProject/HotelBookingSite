@@ -5,7 +5,7 @@
 .background2 {
   background-color: #DBEDF3;
   padding: 50px 0;
-  height: 400px;
+  height: 700px;
 }
 .background3 {
   background-color: #DBEDF3;
@@ -14,12 +14,17 @@
   margin: auto;
 }
 .header {
-  max-width: 1000px;
   min-width: 500px;
+  max-width: 1000px;
   margin: auto;
 }
 br {
   clear: both;
+}
+embed {
+  height: 100vh;
+  width: 100%;
+  margin: 50px 0 0 0;
 }
 /************ BODY ***********/
 
@@ -31,6 +36,8 @@ ul {
 .NavBar {
   background-color: #283149;
   height: 50px;
+  position: fixed;
+  width: 100%;
 }
   /************ HOME ICON **********/
   .HomeIcon {
@@ -46,9 +53,9 @@ ul {
   .NavContent {
     list-style: none;
     width: 100px;
-    height: 40px;
-    vertical-align: middle;
-    margin: 10px 0px 0px 0px;
+    height: 50px;
+    padding: 10px 0;
+    margin: 0px 0px 0px 0px;
   }
   .Active {
     background-color: #404B69;
@@ -72,6 +79,12 @@ ul {
   .SearchBlock{
     padding: 14.5px 24.5px;
     margin: 0;
+  }
+  .HomeBlock:visited {
+    color: #DBEDF3;
+  }
+  .SearchBlock:visited {
+    color: #DBEDF3;
   }
   .NavText:Hover {
     background-color: #DA0463;
@@ -100,18 +113,20 @@ ul {
     position: absolute;
     background-color: #f1f1f1;
     min-width: 170px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
-  .dropdown-content a {
+  .dropdown-content button {
+    font-size: 16px;
     color: black;
     padding: 12px 16px;
+    border: 0;
+    width: 170px;
     text-decoration: none;
     display: block;
     background-color: #DA0463;
     color: #DBEDF3;
   }
-  .dropdown-content a:hover {
+  .dropdown-content button:hover {
     background-color: #283149;
     color: #DBEDF3;
   }
@@ -123,6 +138,8 @@ ul {
   }
   /************ MY ACCOUNT *********/
 /****************** HEADER BAR ********************/
+
+
 
 /************** SEARCH BAR **************/
 .SearchContentOuter {
@@ -198,7 +215,6 @@ ul {
     margin: 0 0 0 35px;
     color: rgba(64,75,105,0.8);
   }
-
   #CheckOut {
     margin: 0 0 0 35px;
   }

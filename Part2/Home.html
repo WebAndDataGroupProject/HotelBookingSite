@@ -11,123 +11,29 @@
 
 <body class="background">
   <!-- HEADER -->
-  <nav class="NavBar header">
-    <!-- HOME ICON -->
-    <a class="" href="#"><i class="fas fa-home HomeIcon NavContentLeft"></i></a>
-    <!-- HOME ICON -->
-    <!-- NAV MENU LIST CONTENT -->
-    <ul class="">
-      <li class="NavContent NavContentLeft"><a href="#" class="NavText HomeBlock Active">Home</a></li>
-      <li class="NavContent NavContentLeft"><a href="#" class="NavText SearchBlock">Search</a></li>
-    </ul> 
-    <!-- MY ACCOUNT -->
-    <div class="dropdown">
-      <button class="dropbtn">My Account</button>
-      <div class="dropdown-content">
-        <a href="#">Login</a>
-        <a href="#">Create Account</a>
+  <div class="NavBar">
+    <nav class="header">
+      <!-- HOME ICON -->
+      <i id="home_icon" class="fas fa-home HomeIcon NavContentLeft" onclick="HomePage()"></i>
+      <!-- NAV MENU LIST CONTENT -->
+      <ul class="">
+        <li id="home" class="NavContent NavContentLeft Active"><a href="#" class="NavText HomeBlock" onclick="HomePage()">Home</a></li>
+        <li id="search" class="NavContent NavContentLeft"><a href="#" class="NavText SearchBlock" onclick="SearchPage()">Search</a></li>
+      </ul> 
+      <!-- MY ACCOUNT -->
+      <div class="dropdown">
+        <button class="dropbtn">My Account</button>
+        <div class="dropdown-content">
+          <button id="login" onclick="LoginPage()">Login</button>
+          <button id="signup" onclick="SignupPage()">Create Account</button>
+        </div>
       </div>
-    </div>
-    <!-- MY ACCOUNT -->
-  </nav>
-  <!-- HEADER -->
-
-  <div class="background2">
-    <div class="SearchContentOuter"> 
-      <div class="SearchContentInner">
-        <label class="SearchContentFont">Destination</label>
-          <i class="icon fas fa-map-marker-alt"></i>
-          <div class="DestinationBlock">
-            <input type="text" class="DestinationBlock DestinationInputBlock" placeholder="Search...">
-          </div>
-        <input type="submit" class="SearchButton" value="Search">
-        <br><br>
-        <label class="SearchContentFont">Check-in</label>
-          <i class="icon far fa-calendar-alt"></i>
-          <div class="CheckinOutBlock">
-            <input type="date" class="CheckinOutBlock CheckInOutInputBlock">
-          </div>
-        <label class="SearchContentFont" id="CheckOut">Check-out</label>
-          <i class="icon far fa-calendar-alt"></i>
-          <div class="CheckinOutBlock">
-            <input type="date" class="CheckinOutBlock CheckInOutInputBlock">
-          </div>
-        <br><br>
-        <label class="SearchContentFont">Rooms</label>
-          <select class="Rooms">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-          </select>
-        <label class="SearchContentFont">Adults (18+)</label>
-          <select class="Rooms">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-          </select>
-        <label class="SearchContentFont">Children (0-17)</label>
-          <select class="Rooms">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-          </select>
-        <br><br>
-      </div>
-    </div>
+    </nav>
   </div>
-  <div class="container-fluid bg-3 text-center background3">    
-    <h3>Top Destinations</h3><br>
-    <div class="row">
-      <div class="col-sm-3">
-        <p>Some text..</p>
-        <img src="https://placehold.it/150x80?text=IMAGE" class="" style="width:100%" alt="Image">
-      </div>
-      <div class="col-sm-3"> 
-        <p>Some text..</p>
-        <img src="https://placehold.it/150x80?text=IMAGE" class="" style="width:100%" alt="Image">
-      </div>
-      <div class="col-sm-3"> 
-        <p>Some text..</p>
-        <img src="https://placehold.it/150x80?text=IMAGE" class="" style="width:100%" alt="Image">
-      </div>
-      <div class="col-sm-3">
-        <p>Some text..</p>
-        <img src="https://placehold.it/150x80?text=IMAGE" class="" style="width:100%" alt="Image">
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid bg-3 text-center background3">    
-    <div class="row">
-      <div class="col-sm-3">
-        <p>Some text..</p>
-        <img src="https://placehold.it/150x80?text=IMAGE" class="" style="width:100%" alt="Image">
-      </div>
-      <div class="col-sm-3"> 
-        <p>Some text..</p>
-        <img src="https://placehold.it/150x80?text=IMAGE" class="" style="width:100%" alt="Image">
-      </div>
-      <div class="col-sm-3"> 
-        <p>Some text..</p>
-        <img src="https://placehold.it/150x80?text=IMAGE" class="" style="width:100%" alt="Image">
-      </div>
-      <div class="col-sm-3">
-        <p>Some text..</p>
-        <img src="https://placehold.it/150x80?text=IMAGE" class="" style="width:100%" alt="Image">
-      </div>
-    </div>
-    <br>
-  </div>
-  <br>
-  <footer class="container-fluid text-center">
-    <p>Footer Text</p>
-  </footer>
+  
+  <embed src="HomeContent.html" id="content">
+    
+  <script src="SwitchContent.js"></script>
 </body>
 </html>
 
