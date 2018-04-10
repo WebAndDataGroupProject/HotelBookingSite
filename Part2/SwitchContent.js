@@ -1,38 +1,38 @@
 function HomePage()
 {
-  document.getElementById("content").src = "HomeContent.html";
+  document.getElementById("content").innerHTML = "<embed src='HomeContent.html'>";
   checkActive();
   document.getElementById("home").classList.add("Active");
 }
 
 function SearchPage()
 {
-  document.getElementById("content").src = "Search.html";
+  document.getElementById("content").innerHTML = "<embed src='Search.html'>";
   checkActive();
   document.getElementById("search").classList.add("Active");
 }
 
 function LoginPage()
 {
-  document.getElementById("content").src = "Login.html";
+  document.getElementById("content").innerHTML = "<embed src='Login.html'>";
   checkActive();
 }
 
 function SignupPage()
 {
-  document.getElementById("content").src = "Signup.html";
+  document.getElementById("content").innerHTML = "<embed src='Signup.html'>";
   checkActive();
 }
 
 function AccountSettingsPage()
 {
-  document.getElementById("content").src = "AccountSettings.html";
+  document.getElementById("content").innerHTML = "<embed src='AccountSettings.html'>";
   checkActive();
 }
 
 function HotelRoomPage()
 {
-  document.getElementById("content").src = "HotelRoom.html";
+  document.getElementById("content").innerHTML = "<embed src='HotelRoom.html'>";
   checkActive();
 }
 function checkActive() {
