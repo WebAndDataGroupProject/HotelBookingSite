@@ -4,9 +4,12 @@
   <title>Account</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<!-- CSS -->  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="stylesheet1.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">  
+  
 </head>
 
 <body class="background"> 
@@ -48,17 +51,66 @@
         </div>
         <br>
         <hr>
-        <button class="btn btn-info">Edit Hotel Information</button>
+        <button id="editHotel-btn" class="btn btn-info">Edit Hotel Information</button>
       </div> 
     </div>
   </div>
   <br>
+  
+  <!-- EDIT HOTEL MODAL CONTENT -->
+  <div id="editHotel-modal" class="modal" style="display: none">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Add Hotel</h2>
+      <div class="row">
+        <div class="col-xs-12">
+        <form>
+          <div class="form-group">
+            <label for="hotelName">Hotel Name</label>
+            <input type="text" class="form-control" id="hotelName" placeholder="Enter name">
+          </div>
+          <div class="form-group">
+            <label for="NumberofRooms">Number of Rooms</label>
+            <input type="text" class="form-control" id="numOfRooms" placeholder="Enter number">
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" class="form-control" id="address" placeholder="Enter Address">
+          </div>
+          <div class="form-group">
+            <label for="Country">Country</label>
+            <input type="text" class="form-control" id="country" placeholder="Enter Country">
+          </div>
+          <div class="form-group">
+            <label for="cancellations">Does your hotel offer cancellations?</label>
+            <select id="cancellations" class="form-control">
+              <option selected>No</option>
+              <option>Yes</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="Price">Price Per Night</label>
+            <input type="text" class="form-control" id="price" value="$">
+          </div>
+          <button type="submit" id="save-btn" class="btn btn-primary">Save</button>
+          <button type="button" id="quit-btn" class="btn btn-secondary" onclick="closeWindow()" data-dismiss="modal">Quit</button>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  </div>  
+  
 </div>
 
   <!-- FOOTER -->  
   <footer class="container-fluid text-center">
     <p>Footer Text</p>
   </footer>
+  
+  <!-- JS -->
+  <script src="modal.js"></script>
   
 </body>
 </html>
