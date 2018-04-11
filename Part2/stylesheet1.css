@@ -452,6 +452,7 @@ ul {
 }
 
 .floatingleft{
+    align-content: center;
     margin-left: 40px;
 }
 
@@ -459,6 +460,83 @@ ul {
     text-align: right;
     float:right;
 }
+
+.image-placeholder{
+    background-color: #DBEDF3;
+    display: flex;
+    height: auto;
+    width: auto;
+    margin: 10px;
+    margin-left: 100px;
+
+}
+
+.image-place {
+    float: left;
+    background-color: #eee;
+    display: flex;
+    height: 180px;
+    margin: 5px;
+    width: 260px;
+}
+
+#roomnfeature{
+    clear: left;
+    background-color:#DBEDF3;
+    align-content: center;
+    height: auto;
+    width: auto;
+}
+
+.headpanel{
+    width:auto;
+    height:auto;
+    
+    background-color: aqua;
+}
+
+.leftboxpanel{
+    
+    width:auto;
+    height:auto;
+    margin-left:100px;
+    margin-right: 100px;
+    background-color: #DBEDF3;
+}
+
+#roomallocationblock{
+    height: 500px;
+    width: auto;
+    background-color: black;
+}
+
+.editbox{
+    
+}
+
+
+.rightboxpanel{
+    
+    width:auto;
+    height:auto;
+    margin-left:100px;
+    margin-right: 100px;
+    background-color: #DBEDF3;
+}
+
+p.textformat{
+    color: brown;
+    word-wrap: break-word;
+    height: auto;
+    width: 400px;
+}
+
+
+.reviewpanel{
+    height: 100px;
+    width: auto;
+}
+
 
 >>>>>>> 57ff29a1bbf18123d445d9ed5135177c2eb90397
 /******************* FOOTER ******************/
