@@ -327,6 +327,10 @@ ul {
   /* background image */
 }
 
+#spacious{
+    height: 15px;
+}
+
 .leftbox{
     float: left;
     
@@ -367,13 +371,39 @@ ul {
 
     margin:auto;
     border: 10px;
-    border-radius:25px;
+    border-radius:4px;
     background-color: #283149; 
 }
+
 .tabulatedheader{
+    /* This is the header component */
     height: 40px;
+    overflow:hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
 }
 
+
+.tabulatedheader button:hover{
+    /* This will be the colour when hovering over with the mouse */
+    background-color:#ddd;
+}
+
+.tabulatedheader button.active{
+    background-color:#ddd;
+}
+
+/* Fading in tab effect */
+@-webkit-keyframes fadeEffect{
+    from {opacity:0;}
+    to{opacity: 1;}
+}
+
+@keyframes fadeEffect{
+    from {opacity:0;}
+    to {opacity:1;}
+    
+}
 
 #left{
     float: left;
@@ -425,7 +455,10 @@ ul {
     margin-left: 40px;
 }
 
-
+.rhscontent{
+    text-align: right;
+    float:right;
+}
 
 >>>>>>> 57ff29a1bbf18123d445d9ed5135177c2eb90397
 /******************* FOOTER ******************/
