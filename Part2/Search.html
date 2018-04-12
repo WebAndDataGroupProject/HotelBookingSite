@@ -79,27 +79,76 @@
       <div class="browse-container">
         <!-- sort by -->
         <div class="sort-container">
-          <label>Sort By: </label>
-          <select>
-            <option value="Recommended" selected="selected">Recommended</option>
-            <option value="HLRating">Highest to Lowest Rating</option>
-            <option value="Distance">Distance to CBD</option>
-            <option value="LHPrice">Lowest to Highest Price</option>
-            <option value="HLPrice">Highest to Lowest Price</option>
-            <option value="AZName">A to Z</option>
-            <option value="ZAName">Z to A</option>
-          </select>
+          <div class="sortby-container">
+            <label id="sort-label">Sort By: </label>
+            <select>
+              <option value="Recommended" selected="selected">Recommended</option>
+              <option value="HLRating">Highest to Lowest Rating</option>
+              <option value="Distance">Distance to CBD</option>
+              <option value="LHPrice">Lowest to Highest Price</option>
+              <option value="HLPrice">Highest to Lowest Price</option>
+              <option value="AZName">A to Z</option>
+              <option value="ZAName">Z to A</option>
+            </select>
+          </div>
+          <div class="mapsall-container">
+            <p id="mapall"><i class="fas fa-map-marker-alt"></i> Show all on map</p>
+          </div>
         </div>
         <!-- database hits -->
         <div class="rooms-container">
-          
+          <!-- example -->
+          <div class="ri-container">
+            <img class="ri-image" src="asdf.png" alt="Hotel image">
+          </div>
+          <h4>Hotel Name</h4>
+          <div class="rw-container">
+            <p><i class="fas fa-map-marker-alt"></i> Show on map</p>
+            <a href="#">Reviews</a>
+            <p>Rooms available: <p>
+          </div>
+          <div class="rw-container">
+            <p>Rating: </p>
+            <p>Free cancellation: </p>
+            <h4>Price: </h4>
+            <input id="book-button" type="button" value="Make Booking">
+          </div>
+        </div>
+        <!-- database hits -->
+        <div class="rooms-container">
+          <!-- example -->
+          <div class="ri-container">
+            <img class="ri-image" src="asdf.png" alt="Hotel image">
+          </div>
+          <h4>Hotel Name</h4>
+          <div class="rw-container">
+            <p><i class="fas fa-map-marker-alt"></i> Show on map</p>
+            <a href="#">Reviews</a>
+            <p>Rooms available: <p>
+          </div>
+          <div class="rw-container">
+            <p>Rating: </p>
+            <p>Free cancellation: </p>
+            <h4>Price: </h4>
+            <input id="book-button" type="button" value="Make Booking">
+          </div>
         </div>
       </div>
     </div>
     <br><br>
   </div>
-  <footer class="container-fluid text-center">
-    <p>Footer Text</p>
+  <footer>
+    <div class="background3">
+      <div class="column3">
+        <p>Footer Text</p>
+      </div>
+      <div class="column3">
+      <p>Footer Text</p>
+        </div>
+      <div class="column3">
+        <p>Footer Text</p>
+      </div>
+    </div>
   </footer>
   
   <script src="MinDate.js"></script>
