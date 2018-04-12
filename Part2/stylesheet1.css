@@ -641,88 +641,53 @@ input[type=text]{
 }
 
 
-.rhscontent{
-    text-align: right;
-    float:right;
-}
-
 .image-placeholder{
     background-color: #DBEDF3;
-    display: flex;
-    height: auto;
-    width: auto;
+    float: left;
+    height: 400px;
+    width: 400px;
     margin: 10px;
-    margin-left: 100px;
+
 
 }
 
 .image-place {
-    float: left;
     background-color: #eee;
     display: flex;
-    height: 180px;
+    height: 400px;
     margin: 5px;
-    width: 260px;
+    width: 400px;
+    
 }
 
-#roomnfeature{
-    clear: left;
-    background-color:#DBEDF3;
-    align-content: center;
+.detalicontent{
     height: auto;
-    width: auto;
-}
-
-.headpanel{
-    width:auto;
-    height:auto;
-    
-    background-color: aqua;
-}
-
-.leftboxpanel{
-    
-    width:auto;
-    height:auto;
-    margin-left:100px;
-    margin-right: 100px;
-    background-color: #DBEDF3;
-}
-
-#roomallocationblock{
-    height: 500px;
-    width: auto;
-    background-color: black;
-}
-
-.editbox{
+    width: inherit;
+    margin: 100px;
     
 }
+.features-section{
 
-
-.rightboxpanel{
-    
-    width:auto;
-    height:auto;
-    margin-left:100px;
-    margin-right: 100px;
-    background-color: #DBEDF3;
-}
-
-p.textformat{
-    color: brown;
+    margin-top: 15px;
     word-wrap: break-word;
     height: auto;
-    width: 400px;
+    width: inherit;
 }
 
-
-.reviewpanel{
-    height: 100px;
-    width: auto;
+#cancellation-section{
+    font-size: 10px;
+    width: inherit;
 }
 
+.Roomleft-section{
+    
+}
 
+#price-section{
+    font-size: 15px;
+    width: inherit;
+
+}
 
 /******************* FOOTER ******************/
 footer {
