@@ -79,16 +79,21 @@
       <div class="browse-container">
         <!-- sort by -->
         <div class="sort-container">
-          <label>Sort By: </label>
-          <select>
-            <option value="Recommended" selected="selected">Recommended</option>
-            <option value="HLRating">Highest to Lowest Rating</option>
-            <option value="Distance">Distance to CBD</option>
-            <option value="LHPrice">Lowest to Highest Price</option>
-            <option value="HLPrice">Highest to Lowest Price</option>
-            <option value="AZName">A to Z</option>
-            <option value="ZAName">Z to A</option>
-          </select>
+          <div class="sortby-container">
+            <label id="sort-label">Sort By: </label>
+            <select>
+              <option value="Recommended" selected="selected">Recommended</option>
+              <option value="HLRating">Highest to Lowest Rating</option>
+              <option value="Distance">Distance to CBD</option>
+              <option value="LHPrice">Lowest to Highest Price</option>
+              <option value="HLPrice">Highest to Lowest Price</option>
+              <option value="AZName">A to Z</option>
+              <option value="ZAName">Z to A</option>
+            </select>
+          </div>
+          <div class="mapsall-container">
+            <p id="mapall"><i class="fas fa-map-marker-alt"></i> Show all on map</p>
+          </div>
         </div>
         <!-- database hits -->
         <div class="rooms-container">

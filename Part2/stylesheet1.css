@@ -260,6 +260,19 @@ ul {
   font-size: 16px;
   border-bottom: solid 1px #283149;
 }
+#sort-label {
+  color: #283149;
+}
+.sortby-container {
+  float: left;
+}
+.mapall-container {
+  float: left;
+}
+#mapall {
+  text-align: right;
+  padding: 5px 0;
+}
 .rooms-container {
   height: 220px;
   padding: 20px;
