@@ -301,8 +301,21 @@ ul {
 .personal-info {
    padding-top: 0 auto;
    float: left;
-   padding-bottom: 50px;
+   padding-bottom: 10px;
 }
+
+
+#editDetails-btn {
+   float: left;
+   margin: 20px;
+}
+
+#editHotel-btn {
+   float: right;
+   margin: 20px;
+   margin-right: 220px;
+}
+
 hr {
   display: block;
   height: 1px;
@@ -315,7 +328,7 @@ hr {
 .business-info {
    padding-top: 0 auto;
    float: right;
-   padding-bottom: 50px;
+   padding-bottom: 10px;
 }
 .business-info p {
    color: #283149;
