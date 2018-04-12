@@ -465,7 +465,7 @@ label {
   /* background image */
 }
 
-#spacious{
+.spacious{
     height: 15px;
 }
 
@@ -502,7 +502,7 @@ label {
 }
 #loginbox{
     
-    height:400px;
+    height:450px;
     width:300px;
 
     margin:auto;
@@ -513,12 +513,29 @@ label {
 
 .tabulatedheader{
     /* This is the header component */
-    height: 40px;
     overflow:hidden;
     border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    
 }
 
+
+
+.tabulatedheader button{
+/** Change the colour of background button **/
+    background-color:inherit;
+    height: 40px;
+    padding:10px;
+    float: left;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    color: aqua;
+    float: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 19px;
+    width: 148px;
+}
 
 
 .tabulatedheader button:hover{
@@ -527,7 +544,7 @@ label {
 }
 
 .tabulatedheader button.active{
-    background-color:#ddd;
+    background-color:#ccc;
 }
 
 /* Fading in tab effect */
@@ -542,37 +559,25 @@ label {
     
 }
 
-
-#left{
-    float: left;
-    
-    height: 40px;
-    width:150px;
-    
-    text-align: center;
-    color: aqua;
-    border-radius: 25px;
-    background: #73AD21;
-
-    font-size: 20px;
-}
-#right{
-    height: 40px;
-    float: right;
-    text-align: center;
-    color: aqua;
-    border-radius: 25px;
-    background: #73AD21;
-    width:150px;
-
-    font-size: 20px;
-}
 .SignUpContent{
+    display:none;
     height: auto;
     width: auto;
-    margin-left: ;
     font-size: 12px;
+    margin-left: 25px;
 }
+
+.formstyle{
+    color: aliceblue;
+    font-size: 18px;
+}
+
+input[type=text]{
+    width: 80%;
+    padding:2px 20px;
+    box-sizing: border-box;
+}
+
 .login-container {
   width: 400px;
   margin: auto;
