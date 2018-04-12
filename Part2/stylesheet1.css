@@ -486,9 +486,56 @@ ul {
 .SignUpContent{
     height: auto;
     width: auto;
-    margin-left: 35px;
-    font-size: 10pt;
-    color:floralwhite;
+    margin-left: ;
+    font-size: 12px;
+}
+.login-container {
+  width: 400px;
+  margin: auto;
+  padding: 20px;
+  margin: auto;
+  background-color: #404B69;
+}
+#login-box {
+  padding: 20px;
+}
+#login-text {
+  color: #DBEDF3;
+}
+#login-form {
+  color: #DBEDF3;
+}
+.form-box {
+  width: 250px;
+  border-radius: 0;
+  background-color: #DBEDF3;
+  border: none;
+}
+#login-submit {
+  background-color: #DA0463;
+  color: #DBEDF3;
+  border: none;
+  padding: 5px;
+}
+.newmember-container {
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+  border: none;
+  background-color: #404B69;
+  text-align: center;
+  vertical-align: middle;
+}
+#newmember-text {
+  color: #DBEDF3;
+}
+#newmember-transfer {
+  color: #DBEDF3;
+  background-color: #404B69;
+  border-radius: 0px;
+  padding: 0;
+  border: none;
+  font-weight: bold;
 }
 /******************* HOTEL PAGE ******************/
 
@@ -513,4 +560,5 @@ footer {
   width: 333.3px;
   padding: 20px;
   min-height: 100px;
+  text-align: center;
 }
