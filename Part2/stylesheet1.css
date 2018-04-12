@@ -342,6 +342,7 @@ ul {
    border-style: solid;
    border-color: #293149;
 }
+
 /* MODAL */
 /* The Modal (background) */
 .modal {
@@ -387,6 +388,22 @@ ul {
    color: #DBEDF3;
    padding: 20px;
 }
+
+label {
+   color: #DBEDF3;
+}
+
+.hotel-details {
+   padding-top: 0 auto;
+   float: left;
+   padding-bottom: 50px;
+}
+
+.uploadImage {
+   padding-top: 0 auto;
+   float: right;
+   padding-bottom: 50px;
+}
 /* ADD HOTEL FORM */
 #hotelName {
    width: 300px;
@@ -408,6 +425,12 @@ ul {
    width: 150px;
    margin-right: 20px;
 }
+
+#output_image
+{
+ max-width:300px;
+}
+
 /******************* SIGN UP PAGE ******************/
 .SignupBackground{
   background-color: #DBEDF3;

@@ -1,4 +1,5 @@
 // EDIT HOTEL POP-UP
+
 // Get the modal
 var modal = document.getElementById('editHotel-modal');
 
@@ -25,6 +26,19 @@ window.onclick = function(event) {
     }
 }
 
+// Closes modal.
 function closeWindow() {
 	modal.style.display = "none";
+}
+
+// Preview the image to be uploaded.
+function preview_image(event) 
+{
+ var reader = new FileReader();
+ reader.onload = function()
+ {
+  var output = document.getElementById('output_image');
+  output.src = reader.result;
+ }
+ reader.readAsDataURL(event.target.files[0]);
 }
