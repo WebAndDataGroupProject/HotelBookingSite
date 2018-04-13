@@ -1,10 +1,10 @@
 /************ BODY ***********/
 .background {
-  background-color: #283149;
+  background-color: #DBEDF3;
 }
 .background2 {
   background-color: #DBEDF3;
-  height: 500px;
+  height: 400px;
   padding: 150px 0;
   /* background image */
 }
@@ -104,7 +104,7 @@ ul {
   .dropbtn {
     background-color: #283149;
     color: #DBEDF3;;
-    padding: 13.58px 43.5px;
+    padding: 13.58px 43px 13px 43px;
     font-size: 16px;
     border: none;
   }
@@ -295,7 +295,7 @@ ul {
   height: 160px;
   width: 160px;
 }
-#book-button {
+.book-button {
   border: none;
   border-radius: 0;
   padding: 10px;
@@ -305,14 +305,19 @@ ul {
   font-weight: bold;
 }
 /************** PROMOTIONS ***************/
-    
+.promotionorder{
+    width: 25%;
+    display: inline-block;
+    border: none;
+}
+
 /************** ACCOUNT PAGE ***************/
 .account {
    height: 88vh;
    padding-bottom: 10px;
 }
 .personal-info {
-   padding-top: 0 auto;
+   padding-top: 0px;
    float: left;
    padding-bottom: 10px;
 }
@@ -339,7 +344,7 @@ hr {
   padding: 0;
 }
 .business-info {
-   padding-top: 0 auto;
+   padding-top: 0px;
    float: right;
    padding-bottom: 10px;
 }
@@ -420,13 +425,13 @@ label {
 }
 
 .hotel-details {
-   padding-top: 0 auto;
+   padding-top: 0px;
    float: left;
    padding-bottom: 50px;
 }
 
 .uploadImage {
-   padding-top: 0 auto;
+   padding-top: 0px;
    float: right;
    padding-bottom: 50px;
 }
@@ -500,7 +505,7 @@ label {
     
     background-color: #DBEDF3;
 }
-#loginbox{
+.loginbox{
     
     height:450px;
     width:300px;
@@ -508,7 +513,7 @@ label {
     margin:auto;
     border: 10px;
     border-radius:4px;
-    background-color: #283149; 
+    background-color: #404B69; 
 }
 
 .tabulatedheader{
@@ -529,7 +534,7 @@ label {
     display: inline-block;
     text-align: center;
     border: none;
-    color: aqua;
+    color: #DBEDF3;
     float: left;
     cursor: pointer;
     transition: 0.3s;
@@ -600,7 +605,7 @@ input[type=text]{
   background-color: #DBEDF3;
   border: none;
 }
-#login-submit {
+.login-submit {
   background-color: #DA0463;
   color: #DBEDF3;
   border: none;
@@ -693,12 +698,14 @@ input[type=text]{
 footer {
   background-color: white;
   margin: auto;
+    height: 110px;
   min-height: 100px;
 }
 .column3 {
   float: left;
-  width: 333.3px;
-  padding: 20px;
+  width: 33%;
+  padding-top: 5px;
   min-height: 100px;
   text-align: center;
+
 }
