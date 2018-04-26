@@ -1,0 +1,12 @@
+<root>
+	<place name="Ibis Hotel" latitude="-34.923870" longitude="138.604218" />
+	<place name="Mayfair Hotel" latitude="-34.923271" longitude="138.599176" />
+</root>
+
+
+
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<markers>
+    <marker id="1" name="Ibis Hotel" markerimage="images/ibis.jpeg" lat="-34.923870" lng="138.604218" />
+    <marker id="2" name="Mayfair Hotel" markerimage="images/mayfair.jpeg" lat="-34.923271" lng="138.599176" />
+</markers> -->
