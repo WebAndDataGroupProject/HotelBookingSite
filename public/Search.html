@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Search</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="stylesheets\stylesheet1.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+
+  <!-- Maps Modal Requirements -->
+  <link rel="stylesheet" href="stylesheets/maps/MapsModal.css">
+
+</head>
+
+<body class="background">
+  <div class="background4">
+    <div class="background3">
+      <!--location, checkin, checkout, rooms, adults, children,-->
+      <div class="SearchContentInner">
+        <label class="SearchContentFont darktext">Destination</label>
+          <i class="icon fas fa-map-marker-alt"></i>
+          <div class="DestinationBlock">
+            <input type="text" class="DestinationBlock DestinationInputBlock border" placeholder="Search..." style="margin-left: 5px;">
+          </div>
+        <input type="submit" class="SearchButton" value="Search">
+        <br><br>
+        <label class="SearchContentFont darktext">Check-in</label>
+          <i class="icon far fa-calendar-alt"></i>
+          <div class="CheckinOutBlock">
+            <input type="date" id="Checkin" class="CheckinOutBlock CheckInOutInputBlock border" onclick="CurrentDate()">
+          </div>
+        <label class="SearchContentFont darktext" id="CheckOut">Check-out</label>
+          <i class="icon far fa-calendar-alt"></i>
+          <div class="CheckinOutBlock">
+            <input type="date" id="Checkout" class="CheckinOutBlock CheckInOutInputBlock border" onclick="CurrentDate()">
+          </div>
+        <br><br>
+        <label class="SearchContentFont darktext">Rooms</label>
+          <input class="Rooms border" type="number" placeholder="1" min="1">
+        <label class="SearchContentFont darktext">Adults (18+)</label>
+          <input class="Rooms border" type="number" placeholder="1" min="0">
+        <label class="SearchContentFont darktext">Children (0-17)</label>
+          <input class="Rooms border" type="number" placeholder="0" min="0">
+        <br>
+      </div>
+    <hr>
+    </div>
+    <!-- MINIMUM SEARCH FILTERS: rating, pricing, amenities-->
+    <div class="background3">
+      <div class="sf-container">
+        <h4>Filter properties by:</h4>
+        <br>
+        <!-- ratings -->
+        <details open>
+          <summary>Rating</summary>
+          <input type="checkbox" name="rating" value="5-stars">5-stars<br>
+          <input type="checkbox" name="rating" value="4-stars">4-stars<br>
+          <input type="checkbox" name="rating" value="3-stars">3-stars<br>
+          <input type="checkbox" name="rating" value="2-stars">2-stars<br>
+          <input type="checkbox" name="rating" value="1-stars">1-stars<br>
+        </details>
+        <br>
+        <!-- price -->
+        <details open>
+          <summary>Price per night</summary>
+          <input type="checkbox" name="price" value="<AU$75">Less than AU $75<br>
+          <input type="checkbox" name="price" value="<AU$75-125">AU $75 to AU $125<br>
+          <input type="checkbox" name="price" value="<AU$125-175">AU $125 to AU $175<br>
+          <input type="checkbox" name="price" value="<AU$175+">Greater than AU $175<br>
+        </details>
+        <br>
+        <!-- amenities-->
+        <details open>
+          <summary>Amenities</summary>
+          <input type="checkbox" name="amenities" value="wifi">Wi-fi<br>
+          <input type="checkbox" name="amenities" value="pool">Pool<br>
+          <input type="checkbox" name="amenities" value="spa">Spa<br>
+          <input type="checkbox" name="amenities" value="gym">Gym<br>
+          <input type="checkbox" name="amenities" value="food">Food<br>
+        </details>
+      </div>
+      <div class="browse-container">
+        <!-- sort by -->
+        <div class="sort-container">
+          <div class="sortby-container">
+            <label id="sort-label">Sort By: </label>
+            <select>
+              <option value="Recommended" selected="selected">Recommended</option>
+              <option value="HLRating">Highest to Lowest Rating</option>
+              <option value="Distance">Distance to CBD</option>
+              <option value="LHPrice">Lowest to Highest Price</option>
+              <option value="HLPrice">Highest to Lowest Price</option>
+              <option value="AZName">A to Z</option>
+              <option value="ZAName">Z to A</option>
+            </select>
+          </div>
+          <div class="mapsall-container">
+            <button id="mapall-btn">Show all on map</button>
+          </div>
+        </div>
+        <!-- database hits -->
+        <div class="rooms-container">
+          <!-- example -->
+          <div class="ri-container">
+            <img class="ri-image" src="images/Ibis.jpg" style="width: 100%;height: 100%;border: none;" alt="Hotel image">
+          </div>
+          <h4>Ibis Hotel</h4>
+          <div class="rw-container">
+            <p><i class="fas fa-map-marker-alt"></i> Show on map</p>
+            <a href="#">Reviews</a>
+            <p>Rooms available: 10<p>
+          </div>
+          <div class="rw-container">
+            <p>Rating: 4/5</p>
+            <p>Free cancellation: No</p>
+            <h4>Price: $250 per night</h4>
+            <input class="book-button" type="button" value="Make Booking">
+          </div>
+        </div>
+        <!-- database hits -->
+        <div class="rooms-container">
+          <!-- example -->
+          <div class="ri-container">
+            <img class="ri-image" src="images/mayfair.jpg" style="width: 100%;height: 100%;border: none;" alt="Hotel image">
+          </div>
+          <h4>Mayfair Hotel</h4>
+          <div class="rw-container">
+            <p><i class="fas fa-map-marker-alt"></i> Show on map</p>
+            <a href="#">Reviews</a>
+            <p>Rooms available: 25<p>
+          </div>
+          <div class="rw-container">
+            <p>Rating: 3.5/5</p>
+            <p>Free cancellation: Yes</p>
+            <h4>Price: $100 per night</h4>
+            <input class="book-button" type="button" value="Make Booking">
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+  </div>
+
+    <!-- SHOW ALL MAPS MODAL -->
+    <div id="showAll_mapModal" class="modal" style="display: none">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1>All Hotels</h1>
+          <div class="row">
+            <div class="col-xs-12">
+              <!-- Google Map -->
+              <div id="map">
+              </div>
+            </div>
+          </div>
+      </div>  
+    </div>
+
+  <footer>
+    <div class="background3">
+
+      <div class="column3">
+        <a href="">About Us</a><br>
+        <a href="">Company</a><br>
+        <a href="">Careers</a><br>
+        <a href="">Jobs</a><br>
+          
+        </div>
+      <div class="column3">
+        <a href="">Press</a><br>
+          <a href="">Facebook</a><br>
+        <a href="">Instagram</a><br>
+        <a href="">Support Centre</a><br>
+  
+      </div>
+      <div class="column3">
+        <a href="">Terms and Conditions</a><br>
+        <a href="">Legal information</a><br>
+        <a href="">Privacy Policy</a><br>
+        <a href="">Site Map</a><br>
+        <a href="">Cookie Policy</a><br>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="javascripts/maps/maps.js"></script>
+  <script src="javascripts/maps/modal.js"></script>
+
+  <!-- Google Maps API -->
+  <script async defer
+    src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBxHJ7xSc9KKiZqZcjth2Z8OmNvY3ioWBk&callback=initMap'>
+  </script>
+
+  <script src="javascripts/'MinDate.js"></script>
+  <!-- <script src="Search.js"></script> -->
+
+</body>
+</html>
