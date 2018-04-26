@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Homepage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="stylesheets\stylesheet1.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+</head>
+
+<body class="background">
+  <!-- HEADER -->
+  <div class="NavBar">
+    <nav class="header">
+      <!-- HOME ICON -->
+      <i id="home_icon" class="fas fa-home HomeIcon NavContentLeft" onclick="HomePage()"></i>
+      <!-- NAV MENU LIST CONTENT -->
+      <ul class="">
+        <li id="home" class="NavContent NavContentLeft Active"><a href="#" class="NavText HomeBlock" onclick="HomePage()">Home</a></li>
+        <li id="search" class="NavContent NavContentLeft"><a href="#" class="NavText SearchBlock" onclick="SearchPage()">Search</a></li>
+      </ul> 
+      <!-- MY ACCOUNT -->
+      <div class="dropdown">
+        <button class="dropbtn" id="accountTest" onclick="AccountSettingsPage()">My Account</button>
+        <div class="dropdown-content">
+          <button id="login" onclick="LoginPage()">Login</button>
+          <button id="signup" onclick="SignupPage()">Create Account</button>
+
+        </div>
+      </div>
+    </nav>
+  </div>
+  
+  <div id="content">
+    <embed src='HomeContent.html'>
+  </div>
+    
+  <script src="javascripts\SwitchContent.js"></script>
+</body>
+</html>
+
