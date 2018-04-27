@@ -4,6 +4,7 @@
 var map = null;
 var centre = {lat: -34.920, lng: 138.606};
 
+// Show all hotels on one map.
 function initMap() {
 	var mapOptions = {
 		center: centre,
@@ -13,13 +14,16 @@ function initMap() {
 
 	map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
-	// CAN'T GET AJAX METHOD TO SUCCEED...
+	// XML Parser.
+	// try: https://codepen.io/adrianparr/pen/cjlrn
+
+	// CAN'T GET AJAX METHOD TO SUCCEED...see above..
 	// Load the XML file.
 	$.ajax({
 		type: "GET",
 		async: true,
 		url: "markers.xml",
-		dataType: "xml",
+		dataType: 'xml',
 		success:
 		function (xml) {
 			// An array of places.
