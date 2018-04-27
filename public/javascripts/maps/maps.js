@@ -12,7 +12,6 @@ function initMap() {
 	};
 
 	map = new google.maps.Map(document.getElementById("map"), mapOptions);
-	console.log("map loaded");
 
 	// CAN'T GET AJAX METHOD TO SUCCEED...
 	// Load the XML file.
