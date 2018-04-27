@@ -73,6 +73,22 @@ function addIbisMarker() {
 	// Change map zoom and re-center.
 	map.setZoom(15);
 	map.setCenter(ibisLatLng);
+
+	// Add info window
+	var ibisContentString = '<div id="content">'+
+            '<div id="ibisNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Ibis Hotel</h1>'+
+            '<div id="bodyContent">'+
+            '<p>Address: 122 Grenfell St, Adelaide SA 5000<br>Phone: (08) 8159 5588</p>'+
+            '</div>'+
+            '</div>';
+    var ibisInfoWindow = new google.maps.InfoWindow({
+          content: ibisContentString
+    });
+    ibisMarker.addListener('click', function() {
+          ibisInfoWindow.open(map, ibisMarker);
+    });
 }
 
 // On button click, clear all markers then show Ibis marker.
@@ -94,6 +110,22 @@ function addMayfairMarker() {
 	// Change map zoom and re-center.
 	map.setZoom(15);
 	map.setCenter(mayfairLatLng);
+
+	// Add info window
+	var mayfairContentString = '<div id="content">'+
+            '<div id="mayfairNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Mayfair Hotel</h1>'+
+            '<div id="bodyContent">'+
+            '<p>Address: 45 King William St, Adelaide SA 5000<br>Phone: (08) 8210 8888</p>'+
+            '</div>'+
+            '</div>';
+    var mayfairInfoWindow = new google.maps.InfoWindow({
+          content: mayfairContentString
+    });
+    mayfairMarker.addListener('click', function() {
+          mayfairInfoWindow.open(map, mayfairMarker);
+    });
 }
 
 // On button click, clear markers then show mayfair markers.
