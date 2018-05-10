@@ -85,8 +85,24 @@
                 <input type="text" class="form-control" id="numOfRooms" placeholder="Enter number">
               </div>
               <div class="form-group">
-                <label for="address">Address</label>
-                <input type="text" class="form-control" id="address" placeholder="Enter Address">
+                <label for="number">Number</label>
+                <input type="text" class="form-control" id="number" placeholder="Enter number">
+              </div>
+              <div class="form-group">
+                <label for="street">Street</label>
+                <input type="text" class="form-control" id="street" placeholder="Enter Street">
+              </div>
+              <div class="form-group">
+                <label for="suburb">Suburb</label>
+                <input type="text" class="form-control" id="suburb" placeholder="Enter Suburb">
+              </div>
+              <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" class="form-control" id="city" placeholder="Enter City">
+              </div>
+              <div class="form-group">
+                <label for="state">State</label>
+                <input type="text" class="form-control" id="state" placeholder="Enter State">
               </div>
               <div class="form-group">
                 <label for="Country">Country</label>
@@ -103,7 +119,7 @@
                 <label for="Price">Price Per Night</label>
                 <input type="text" class="form-control" id="price" value="$">
               </div>
-              <button type="submit" id="save-btn" class="btn btn-primary">Save</button>
+              <button type="submit" id="save-btn" class="btn btn-primary" onclick="addHotels()">Save</button>
               <button type="button" id="quit-btn" class="btn btn-secondary" onclick="closeWindow()" data-dismiss="modal">Quit</button>
             </form>
           </div> 
@@ -135,6 +151,7 @@
   
   <!-- JS -->
   <script src="javascripts/maps/modal.js"></script>
+  <script src="javascripts/addHotels.js"></script>
   
 </body>
 </html>

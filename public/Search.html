@@ -12,10 +12,9 @@
 
   <!-- Maps Modal Stylesheet -->
   <link rel="stylesheet" href="stylesheets/MapsModal.css">
-
 </head>
 
-<body class="background">
+<body class="background" onload="showAllHotels()">
   <div class="background4">
     <div class="background3">
       <!--location, checkin, checkout, rooms, adults, children,-->
@@ -102,44 +101,8 @@
             <button id="mapall-btn" class="mapButton">Map</button>
           </div>
         </div>
-        <!-- database hits -->
-        <div class="rooms-container">
-          <!-- example -->
-          <div class="ri-container">
-            <img class="ri-image" src="images/Ibis.jpg" style="width: 100%;height: 100%;border: none;" alt="Hotel image">
-          </div>
-          <h4>Ibis Hotel</h4>
-          <div class="rw-container">
-            <button id="mapIbis-btn" class="fas fa-map-marker-alt mapButton"> Show on map</button>
-            <a href="#">Reviews</a>
-            <p>Rooms available: 10<p>
-          </div>
-          <div class="rw-container">
-            <p>Rating: 4/5</p>
-            <p>Free cancellation: No</p>
-            <h4>Price: $250 per night</h4>
-            <input class="book-button" type="button" value="Make Booking">
-          </div>
-        </div>
-        <!-- database hits -->
-        <div class="rooms-container">
-          <!-- example -->
-          <div class="ri-container">
-            <img class="ri-image" src="images/mayfair.jpg" style="width: 100%;height: 100%;border: none;" alt="Hotel image">
-          </div>
-          <h4>Mayfair Hotel</h4>
-          <div class="rw-container">
-            <button id= '#mapMayfair-btn' class="fas fa-map-marker-alt mapButton"> Show on map</button>
-            <a href="#">Reviews</a>
-            <p>Rooms available: 25<p>
-          </div>
-          <div class="rw-container">
-            <p>Rating: 3.5/5</p>
-            <p>Free cancellation: Yes</p>
-            <h4>Price: $100 per night</h4>
-            <input class="book-button" type="button" value="Make Booking">
-          </div>
-        </div>
+        <!-- container for hotel information -->
+        <div id="container"></div>
       </div>
     </div>
     <br><br>
@@ -196,7 +159,8 @@
     src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBxHJ7xSc9KKiZqZcjth2Z8OmNvY3ioWBk&callback=initMap'>
   </script>
 
-  <script src="javascripts/'MinDate.js"></script>
+  <script src="javascripts/MinDate.js"></script>
+  <script src="javascripts/serveHotels.js"></script>
   <!-- <script src="Search.js"></script> -->
 
 </body>
