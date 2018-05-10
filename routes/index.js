@@ -6,4 +6,12 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+/* POST from Client */
+
+
+
+/* state for my account */
+
+
+
 module.exports = router;
