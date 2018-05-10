@@ -16,6 +16,7 @@
   <!-- ACCOUNT INFO -->
   <div class="container-fluid bg-3 background3">
     <div class="account">
+        
     <!-- PERSONAL INFO --> 
     <div class="personal-info">
       <h1 class="acc-title">Personal Information</h1>
@@ -120,7 +121,49 @@
           </div>
         </div>
       </div>
-          
+
+  <!-- EDIT Personal Information MODAL CONTENT -->
+  <div id="editPI-modal" class="modal" style="display: none">
+    <div class="modal-content">   
+      <span class="close">&times;</span>
+      <h2>Add Hotel</h2>
+      <div class="hotel-details">
+        <div class="row">
+          <div class="col-xs-12">
+            <form>
+              <div class="form-group">
+                <label for="hotelName">Hotel Name</label>
+                <input type="text" class="form-control" id="hotelName" placeholder="Enter name">
+              </div>
+              <div class="form-group">
+                <label for="NumberofRooms">Number of Rooms</label>
+                <input type="text" class="form-control" id="numOfRooms" placeholder="Enter number">
+              </div>
+              <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" class="form-control" id="address" placeholder="Enter Address">
+              </div>
+              <div class="form-group">
+                <label for="Country">Country</label>
+                <input type="text" class="form-control" id="country" placeholder="Enter Country">
+              </div>
+              <div class="form-group">
+                <label for="cancellations">Does your hotel offer cancellations?</label>
+                <select id="cancellations" class="form-control">
+                  <option selected>No</option>
+                  <option>Yes</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="Price">Price Per Night</label>
+                <input type="text" class="form-control" id="price" value="$">
+              </div>
+              <button type="submit" id="save-btn" class="btn btn-primary">Save</button>
+              <button type="button" id="quit-btn" class="btn btn-secondary" onclick="closeWindow()" data-dismiss="modal">Cancel</button>
+            </form>
+          </div> 
+        </div>
+      </div> 
     </div>
       
     </div>
