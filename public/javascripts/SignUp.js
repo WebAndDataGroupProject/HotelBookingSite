@@ -1,6 +1,3 @@
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-
 function opentab(evt, parameter) {
     var i, SignUpContent, tablinks;
     SignUpContent = document.getElementsByClassName("SignUpContent");
@@ -16,3 +13,5 @@ function opentab(evt, parameter) {
     
 
 }
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();

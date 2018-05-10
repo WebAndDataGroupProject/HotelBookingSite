@@ -6,6 +6,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+<<<<<<< HEAD
 // read array of hotels object from JSON file
 var fs = require('fs');
 
@@ -25,5 +26,14 @@ router.post('/hotels.json', function(req, res) {
   hotels.push({hotelName: req.body.hotelName, numOfRooms: req.body.numOfRooms, number: req.body.number, street: req.body.street, suburb: req.body.suburb, city: req.body.city, state: req.body.state, country: req.body.country});
   res.send();
 });
+=======
+/* POST from Client */
+
+
+
+/* state for my account */
+
+
+>>>>>>> 1b4056910875737b8d3530188107e1e742eccc7a
 
 module.exports = router;

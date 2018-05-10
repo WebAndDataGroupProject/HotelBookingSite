@@ -434,6 +434,35 @@ label {
    float: right;
    padding-bottom: 50px;
 }
+
+/* Edit Perosnal Information FORM */
+/*#NameChange {
+   width: 300px;
+}
+#numOfRooms {
+   width: 150px;   
+}
+#address, #country {
+   width: 400px;
+}
+#cancellations {
+   width: 100px;
+}
+#price {
+   width: 200px;
+}
+#save-btn, #quit-btn {
+   float: right;
+   width: 150px;
+   margin-right: 20px;
+}
+
+#output_image
+{
+ max-width:300px;
+}
+
+*/
 /* ADD HOTEL FORM */
 #hotelName {
    width: 300px;
