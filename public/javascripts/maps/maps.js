@@ -1,8 +1,7 @@
 // GOOGLE MAPS
 
 // Global variables
-var map = null;
-var centre = {lat: -34.920, lng: 138.606};
+var markers = [];
 
 // Static markers
 var mayfairMarker;
@@ -14,14 +13,34 @@ var mayfairLatLng = {lat: -34.923271, lng:138.599176};
 
 // Initiate map.
 function initMap() {
+  // create google map
 	var mapOptions = {
-		center: centre,
+		center: {lat: 0.0, lng: 0.0},
 		zoom : 12,
 		styles: [ {visibility: "on"} ]
 	};
+	var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
-	map = new google.maps.Map(document.getElementById("map"), mapOptions);
+  // recenter the map according to the searched location
+  var geocoder = new google.maps.Geocoder();
 
+  geocodeAddress(geocoder, map);
+
+}
+
+// geocode searched address
+function geocodeAddress(geocoder, resultsMap) {
+  var address = document.getElementById('address').value;
+  console.log(address);
+
+  geocoder.geocode({"address":address}, function(results,status) {
+    console.log(results);
+    console.log(status);
+    if(status = "OK") {
+      resultsMap.setCenter(results[0].geometry.location);
+    }
+  });
+}
 
 	// UN-FINISHED IMPLEMENTATION OF LOADING GOOGLE MARKERS FROM XML
 	// XML Parser.
@@ -58,7 +77,8 @@ function initMap() {
 		}
 	});
 	*/
-}
+
+
 
 // Add ibis static markers.
 function addIbisMarker() {
