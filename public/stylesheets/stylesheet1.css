@@ -491,6 +491,10 @@ label {
 }
 
 /******************* SIGN UP PAGE ******************/
+.g-signin2{
+  float: right;
+}
+
 .SignupBackground{
   background-color: #DBEDF3;
   height: 500px;
