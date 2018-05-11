@@ -24,6 +24,7 @@
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
+    height: 700px;
     width: 550px;
     overflow: auto; /* Enable scroll if needed */
 }
