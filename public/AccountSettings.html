@@ -111,26 +111,21 @@
               <div class="form-group">
                 <label for="cancellations">Does your hotel offer cancellations?</label>
                 <select id="cancellations" class="form-control">
-                  <option selected>No</option>
-                  <option>Yes</option>
+                  <option selected value="no">No</option>
+                  <option value="yes">Yes</option>
                 </select>
               </div>
               <div class="form-group">
-                <label for="Price">Price Per Night</label>
-                <input type="text" class="form-control" id="price" value="$">
+                <label for="Price">Price Per Night (AUD)</label>
+                <input type="text" class="form-control" id="price">
               </div>
-<<<<<<< HEAD
-              <button type="submit" id="save-btn" class="btn btn-primary" onclick="addHotels()">Save</button>
-              <button type="button" id="quit-btn" class="btn btn-secondary" onclick="closeWindow()" data-dismiss="modal">Quit</button>
-=======
-              <button type="submit" id="save-btn" class="btn btn-primary">Save</button>
-              <button type="button" id="quit-btn" class="btn btn-secondary" onclick="closeWindow()" data-dismiss="modal">Cancel</button>
->>>>>>> 1b4056910875737b8d3530188107e1e742eccc7a
             </form>
+            <button type="submit" id="save-btn" class="btn btn-primary" onclick="addHotels(), closeWindow()">Save</button>
+            <button type="button" id="quit-btn" class="btn btn-secondary" onclick="closeWindow()" data-dismiss="modal">Quit</button>
           </div> 
         </div>
       </div>
-      
+
       <!--UPLOAD IMG-->
       <div class="uploadImage">
         <label for="upload">Upload Photo:</label>

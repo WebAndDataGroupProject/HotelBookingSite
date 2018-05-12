@@ -15,10 +15,13 @@ function addHotels() {
   var price = document.getElementById('price').value;
 
   // initiate connection
-  xhttp.open("POST", "/hotels.json", true);
+  xhttp.open("POST", "hotels.json", true);
   xhttp.setRequestHeader("Content-type", "application/json");
 
-// function is called, varirbles are stored, but they cannot be stored in the json file
   // send request
-  xhttp.send(JSON.stringify({hotelName:hotelName,numOfRooms:numOfRooms,number:number,street:street,suburb:suburb,city:city,state:state,country:country,cancellations:cancellations,price:price}));
+  if (hotelName !== "" && numOfRooms !== "" && number !== "" && street !== "" && suburb !== "" && city !== "" && state !== "" && country !== "" && price !== "") {
+    xhttp.send(JSON.stringify({hotelName:hotelName,numOfRooms:numOfRooms,number:number,street:street,suburb:suburb,city:city,state:state,country:country,cancellations:cancellations,price:price}));
+  } else {
+    alert("Missing field")
+  }
 }
