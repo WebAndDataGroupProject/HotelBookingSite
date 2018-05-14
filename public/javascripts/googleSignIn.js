@@ -1,14 +1,22 @@
 function onSignIn(googleUser) {
-  var profile = googleUser.getBasicProfile();
-  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-  console.log('Name: ' + profile.getName());
-  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-
-  // The ID token you need to pass to your backend.
+    // Send details to the backend
+    var profile = googleUser.getBasicProfile();
+// Do not send to your backend! Use an ID token instead.
+    //console.log('ID: ' + profile.getId()); 
+    //console.log('Name: ' + profile.getGivenName());
+    //console.log('Family Name' + profile.getFamilyName());
+// This is null if the 'email' scope is not present.
+    //console.log('Email: ' + profile.getEmail()); 
+    
+    var first_name = profile.getGivenName();
+    var second_name = profile.getFamilyName();
+    var email = profile.getEmail();
+// The ID token you need to pass to your backend.
   var id_token = googleUser.getAuthResponse().id_token;
-  console.log("ID Token: " + id_token);
+  //console.log("ID Token: " + id_token);
 
   getUserInfo({idtoken: id_token});
+
 };
 
 function login(){
