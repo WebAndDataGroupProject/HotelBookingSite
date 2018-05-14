@@ -24,6 +24,7 @@ function SignupPage()
   checkActive();
 }
 
+
 function AccountSettingsPage()
 {
   document.getElementById("content").innerHTML = "<embed src='AccountSettings.html'>";

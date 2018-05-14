@@ -613,6 +613,7 @@ input[type=text]{
     width: 80%;
     padding:2px 20px;
     box-sizing: border-box;
+    color: black;
 }
 
 .login-container {

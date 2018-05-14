@@ -26,14 +26,9 @@ router.post('/hotels.json', function(req, res) {
   res.send();
 });
 
-/* POST from Client */
 
 
-
-/* state for my account */
-
-
-// Google Sign-In
+// Google Sign-In details
 
 var CLIENT_ID = '525838695650-dfjbbapejsp89bjmbpeg34kbg7eglmkv.apps.googleusercontent.com';
 var {OAuth2Client} = require('google-auth-library');
@@ -46,7 +41,8 @@ var sessions = {};
 
 router.post('/user.json', function(req, res) {
 	var user = null;
-	console.log(JSON.stringify(req.body));
+    console.log("HERE");
+    console.log(JSON.stringify(req.body));
 
 	// If Google login
 	if(req.body.idtoken !== undefined) {
@@ -61,10 +57,10 @@ router.post('/user.json', function(req, res) {
             
             // Get user data from token
             const payload = ticket.getPayload();
-            
+            console.log(payload);
             // Get user's Google ID
             const userid = payload['sub'];
-            
+            colsole.log(userid);
             for (var i=0; i<users.length; i++){
          
                 /* 
@@ -82,6 +78,8 @@ router.post('/user.json', function(req, res) {
             res.json({username:user});
         }
         verify().catch(console.error);   
+        
+        
     // If no login details, but valid session
     } else if(sessions[req.session.id] !== undefined) {
         console.log("Valid session");
