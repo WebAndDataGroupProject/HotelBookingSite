@@ -1,3 +1,6 @@
 [
-  {"hotelName":"testName","numOfRooms":"5","number":"107","street":"King William Street","suburb":"Adelaide","city":"Adelaide","state":"South Australia","country":"Australia","cancellations":"Yes","price":"100"}
+  
+  {"hotelName":"testName","numOfRooms":"50","number":"107","street":"King William Street","suburb":"Adelaide","city":"Adelaide","state":"South Australia","country":"Australia","cancellations":"Yes","price":"100"},
+  {"hotelName":"Ibis Adelaide","numOfRooms":"70","number":"122","street":"Grenfell Street","suburb":"Adelaide","city":"Adelaide","state":"South Australia","country":"Australia","cancellations":"Yes","price":"200"},
+  {"hotelName":"Mayfair Adelaide","numOfRooms":"40","number":"45","street":"King William Street","suburb":"Adelaide","city":"Adelaide","state":"South Australia","country":"Australia","cancellations":"Yes","price":"209"}
 ]

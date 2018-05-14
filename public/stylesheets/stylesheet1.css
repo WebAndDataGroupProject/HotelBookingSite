@@ -395,7 +395,7 @@ ul {
     padding: 20px;
     border: 1px solid #888;
     width: 40%;
-    height: 60%;
+    height: 95%;
     overflow: auto; /* Enable scroll if needed */
 }
 /* The Close Button */

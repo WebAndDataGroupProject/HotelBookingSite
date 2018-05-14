@@ -22,7 +22,7 @@ router.get('/hotels.json', function(req, res) {
 
 // post request to hotels.json
 router.post('/hotels.json', function(req, res) {
-  hotels.push({hotelName: req.body.hotelName, numOfRooms: req.body.numOfRooms, number: req.body.number, street: req.body.street, suburb: req.body.suburb, city: req.body.city, state: req.body.state, country: req.body.country});
+  hotels.push({hotelName: req.body.hotelName, numOfRooms: req.body.numOfRooms, number: req.body.number, street: req.body.street, suburb: req.body.suburb, city: req.body.city, state: req.body.state, country: req.body.country, cancellations: req.body.cancellations, price: req.body.price});
   res.send();
 });
 
