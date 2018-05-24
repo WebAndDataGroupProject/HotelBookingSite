@@ -9,6 +9,14 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
+//Config MySQL Database
+var mysqpl = require('mysql');
+
+var dbConnectionPool = 
+    
+    
+// Define the app.use function here
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');

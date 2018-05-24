@@ -6,6 +6,37 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+
+/* Database */
+
+router.post('addCustomer', function(req, res){
+    console.log(req.body);
+    
+    req.pool.getConnection(function(err, connection){
+        if(err) throw err;
+        var sql = "INSERT INTO table_name (column_name1,column_name2) VALUES ('"+req.body.parameter1+"', '"+req.body.parameter2+"');";
+        connection.query(sql, function(err, results){
+            //OK PACKET
+            console.log(results);
+            connection.release();
+            
+            //Send back to client
+            res.send(results.);
+        });
+    })  
+    
+});
+
+
+
+
+
+
+
+
+
+
+
 // read array of hotels object from JSON file
 var fs = require('fs');
 
