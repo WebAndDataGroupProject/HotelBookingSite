@@ -8,11 +8,33 @@
 <!-- CSS -->  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="stylesheets\stylesheet1.css">
+  <link rel="stylesheet" href="stylesheets\Header.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">  
   
 </head>
 
 <body class="background"> 
+  <!-- HEADER -->
+  <div class="NavBar">
+    <nav class="header">
+      <!-- HOME ICON -->
+      <a href="index.html"><i id="home_icon" class="fas fa-home HomeIcon NavContentLeft"></i></a>
+      <!-- NAV MENU LIST CONTENT -->
+      <ul>
+        <li id="home" class="NavContent NavContentLeft"><a href="index.html" class="NavText HomeBlock">Home</a></li>
+        <li id="search" class="NavContent NavContentLeft"><a href="Search.html" class="NavText SearchBlock">Search</a></li>
+      </ul> 
+      <!-- MY ACCOUNT -->
+      <div class="dropdown">
+        <a href="AccountSettings.html" class="dropbtn Active" id="accountTest">My Account</a>
+        <div class="dropdown-content">
+          <a href="Login.html" id="login">Login</a>
+          <a href="Signup.html" id="signup">Create Account</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
   <!-- ACCOUNT INFO -->
   <div class="container-fluid bg-3 background3">
     <div class="account">

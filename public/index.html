@@ -6,37 +6,130 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="stylesheets\stylesheet1.css">
+  <link rel="stylesheet" href="stylesheets\Header.css">
+  <link rel="stylesheet" href="stylesheets\SearchBar.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
 </head>
 
 <body class="background">
+
   <!-- HEADER -->
   <div class="NavBar">
     <nav class="header">
       <!-- HOME ICON -->
-      <i id="home_icon" class="fas fa-home HomeIcon NavContentLeft" onclick="HomePage()"></i>
+      <a href="index.html"><i id="home_icon" class="fas fa-home HomeIcon NavContentLeft"></i></a>
       <!-- NAV MENU LIST CONTENT -->
-      <ul class="">
-        <li id="home" class="NavContent NavContentLeft Active"><a href="#" class="NavText HomeBlock" onclick="HomePage()">Home</a></li>
-        <li id="search" class="NavContent NavContentLeft"><a href="#" class="NavText SearchBlock" onclick="SearchPage()">Search</a></li>
+      <ul>
+        <li id="home" class="NavContent NavContentLeft Active"><a href="index.html" class="NavText HomeBlock">Home</a></li>
+        <li id="search" class="NavContent NavContentLeft"><a href="Search.html" class="NavText SearchBlock">Search</a></li>
       </ul> 
       <!-- MY ACCOUNT -->
       <div class="dropdown">
-        <button class="dropbtn" id="accountTest" onclick="AccountSettingsPage()">My Account</button>
+        <a href="AccountSettings.html" class="dropbtn" id="accountTest">My Account</a>
         <div class="dropdown-content">
-          <button id="login" onclick="LoginPage()">Login</button>
-          <button id="signup" onclick="SignupPage()">Create Account</button>
-
+          <a href="Login.html" id="login">Login</a>
+          <a href="Signup.html" id="signup">Create Account</a>
         </div>
       </div>
     </nav>
   </div>
-  
-  <div id="content">
-    <embed src='HomeContent.html'>
+
+  <!-- SEARCH BAR -->
+  <div class="background2">
+    <div class="SearchContentOuter"> 
+      <div class="SearchContentInner">
+        <label class="SearchContentFont">Destination</label>
+          <i class="icon fas fa-map-marker-alt"></i>
+          <div class="DestinationBlock">
+            <input type="text" class="DestinationBlock DestinationInputBlock" placeholder="Search..." style="margin-left: 10px;">
+          </div>
+        <input type="submit" class="SearchButton" value="Search">
+        <br><br>
+        <label class="SearchContentFont">Check-in</label>
+          <i class="icon far fa-calendar-alt"></i>
+          <div class="CheckinOutBlock">
+            <input type="date" id="Checkin" class="CheckinOutBlock CheckInOutInputBlock" onclick="CurrentDate()" style="margin-left: 5px;">
+          </div>
+        <label class="SearchContentFont" id="CheckOut">Check-out</label>
+          <i class="icon far fa-calendar-alt"></i>
+          <div class="CheckinOutBlock">
+            <input type="date" id="Checkout" class="CheckinOutBlock CheckInOutInputBlock" onclick="CurrentDate()" style="margin-left: 5px;">
+          </div>
+        <br><br>
+        <label class="SearchContentFont">Rooms</label>
+          <input class="Rooms border" type="number" placeholder="1" min="1">
+        <label class="SearchContentFont">Adults (18+)</label>
+          <input class="Rooms border" type="number" placeholder="1" min="0">
+        <label class="SearchContentFont">Children (0-17)</label>
+          <input class="Rooms border" type="number" placeholder="0" min="0">
+        <br>
+      </div>
+    </div>
   </div>
-    
-  <script src="javascripts\SwitchContent.js"></script>
+  
+  <!-- PROMOTIONS -->
+  <div class="container-fluid bg-3 text-center background3">    
+    <h3>Top Destinations</h3><br>
+      <!-- Reference website for pictures: http://dailynewsdig.com/top-10-places-visit-mediterranean-die/ -->
+    <div class="row">
+      <div class="promotionorder">
+        <img src="images/promo1.jpg" class="" style="width:220px;height:120px;" alt="Image">
+      </div>
+      <div class="promotionorder">
+        <img src="images/promo2.jpg" class="" style="width:220px;height:120px;" alt="Image">
+      </div>
+      <div class="promotionorder">
+        <img src="images/promo3.jpg" class="" style="width:220px;height:120px;" alt="Image">
+      </div>
+
+    </div>
+    <br>
+  </div>
+
+  <div class="container-fluid bg-3 text-center background3">    
+    <div class="row">
+      <div class="promotionorder">
+        <img src="images/promo4.jpg" class="" style="width:220px;height:120px;" alt="Image">
+      </div>
+      <div class="promotionorder">
+        <img src="images/promo5.jpg" class="" style="width:220px;height:120px;" alt="Image">
+      </div>
+      <div class="promotionorder">
+        <img src="images/promo6.jpg" class="" style="width:220px;height:120px;" alt="Image">
+      </div>
+    </div>
+    <br>
+  </div>
+  <br>
+  
+  <footer>
+    <div class="background3">
+
+      <div class="column3">
+        <a href="">About Us</a><br>
+        <a href="">Company</a><br>
+        <a href="">Careers</a><br>
+        <a href="">Jobs</a><br>
+          
+        </div>
+      <div class="column3">
+        <a href="">Press</a><br>
+          <a href="">Facebook</a><br>
+        <a href="">Instagram</a><br>
+        <a href="">Support Centre</a><br>
+  
+      </div>
+      <div class="column3">
+        <a href="">Terms and Conditions</a><br>
+        <a href="">Legal information</a><br>
+        <a href="">Privacy Policy</a><br>
+        <a href="">Site Map</a><br>
+        <a href="">Cookie Policy</a><br>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="javascripts/MinDate.js"></script>
 </body>
 </html>
 

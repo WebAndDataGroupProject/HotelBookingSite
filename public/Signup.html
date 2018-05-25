@@ -10,17 +10,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="stylesheets\stylesheet1.css">
+  <link rel="stylesheet" href="stylesheets\Header.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
   <script src="javascripts\SignUp.js"></script>
 </head>
 
     <!-- This is just one element on the page so no need for a class -->
-<body class="SignupBackground">
-  <!-- signup part1 - Customer -->
-  <div id="spacious"></div> <!-- Space above box -->
+<body class="background">
+  <!-- HEADER -->
+  <div class="NavBar">
+    <nav class="header">
+      <!-- HOME ICON -->
+      <a href="index.html"><i id="home_icon" class="fas fa-home HomeIcon NavContentLeft"></i></a>
+      <!-- NAV MENU LIST CONTENT -->
+      <ul>
+        <li id="home" class="NavContent NavContentLeft"><a href="index.html" class="NavText HomeBlock">Home</a></li>
+        <li id="search" class="NavContent NavContentLeft"><a href="Search.html" class="NavText SearchBlock">Search</a></li>
+      </ul> 
+      <!-- MY ACCOUNT -->
+      <div class="dropdown">
+        <a href="AccountSettings.html" class="dropbtn" id="accountTest">My Account</a>
+        <div class="dropdown-content">
+          <a href="Login.html" id="login">Login</a>
+          <a href="Signup.html" id="signup">Create Account</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <br>
 
-  <div class="loginbox">
-    <div class="leftbox"></div> 
+  <!-- signup part1 - Customer -->
+  <div class="login">
     <div class="loginbox">
       <!-- Tab area -->
       <div class="tabulatedheader">
@@ -29,17 +49,17 @@
       </div>
       
       <div id="Individual" class="SignUpContent">
-        <div class="spacious"></div>
+        <br>
         <form action="" method="get" target="_blank" class="formstyle">
-          First name<br>
+          <label>First name:</label><br>
           <input type="text" name="firstname" value="e.g. Billy" style="font-size: 12px;color: darkgrey"><br>
-          Last name<br>
+          <label>Last name:</label><br>
           <input type="text" name="lastname" value="e.g. Baxter" style="font-size: 12px;color: darkgrey"><br>
-          Email<br>
+          <label>Email:</label><br>
           <input type="text" name="email" value="e.g. billy.baxter@gmail.com" style="font-size: 12px;color: darkgrey"><br>
-          Password<br>
+          <label>Password</label><br>
           <input type="text" name="password" style="font-size: 12px;color: darkgrey"><br>
-          Repeat password<br>
+          <label>Repeat password:</label><br>
           <input type="text" name="repeatpassword" style="font-size: 12px;color: darkgrey">
           <br> <!-- Need to put on click so it dissappears-->
           <br>
@@ -48,27 +68,24 @@
       </div>
       
       <div id="Company" class="SignUpContent">
-        <div class="spacious"></div>
+        <br>
         <form action="" method="get" target="_blank" class="formstyle">
-          First name<br>
-          <input type="text" name="firstname" value="e.g. Billy" style="font-size: 12px;color: darkgrey;"><br>
-          Last name<br>
+          <label>First name:</label><br>
+          <input type="text" name="firstname" value="e.g. Billy" style="font-size: 12px;color: darkgrey"><br>
+          <label>Last name:</label><br>
           <input type="text" name="lastname" value="e.g. Baxter" style="font-size: 12px;color: darkgrey"><br>
-          Email<br>
+          <label>Email:</label><br>
           <input type="text" name="email" value="e.g. billy.baxter@gmail.com" style="font-size: 12px;color: darkgrey"><br>
-          Company Name<br>
-          <input type="text" name="CompanyName" value="e.g. Dexter" style="font-size: 12px;color: darkgrey"><br>
-          Password<br>
+          <label>Password</label><br>
           <input type="text" name="password" style="font-size: 12px;color: darkgrey"><br>
-          Repeat password<br>
+          <label>Repeat password:</label><br>
           <input type="text" name="repeatpassword" style="font-size: 12px;color: darkgrey">
           <br> <!-- Need to put on click so it dissappears-->
           <br>
           <input type="submit" value="Submit" class="login-submit" style="font-size:100%;">
         </form>
       </div>    
-    </div>
-    <div class="rightbox"></div>        
+    </div>      
 
   </div>
   <br>
