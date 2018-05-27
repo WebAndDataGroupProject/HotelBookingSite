@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 
----------------/* Maria Database */-------------------
+/* maria database */
 
 
 
@@ -54,15 +54,11 @@ router.post('addCustomer', function(req, res){
             connection.release();
             
             //Send back to client
-            res.send(results.);
+            res.send(results);
         });
     });  
     
 });
-
-<<<<<<< HEAD
-
-
 
 // Update account details
 router.get('/', function(req,res){
@@ -92,9 +88,6 @@ router.get('/', function(req,res){
 
 
 /* JSON Object Database */
-
-=======
->>>>>>> 2257f04ee368c38f70cfbcb3070083237fa55ca7
 // read array of hotels object from JSON file
 var fs = require('fs');
 

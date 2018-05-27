@@ -11,9 +11,9 @@ var usersRouter = require('./routes/users');
 var app = express();
 
 //Config MySQL Database
-var mysqpl = require('mysql');
+var mysql = require('mysql');
 
-vardbConnectionPool= mysql.createPool({ host: 'localhost', user: 'root', password: 'WDC2018%',database: 'HotelManagement'});
+var dbConnectionPool = mysql.createPool({ host: 'localhost', user: 'root', password: 'WDC2018%',database: 'HotelManagement'});
     
     
 // Define the app.use function here
