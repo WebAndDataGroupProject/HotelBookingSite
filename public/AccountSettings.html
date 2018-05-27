@@ -7,8 +7,8 @@
   
   <!-- CSS -->  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="stylesheets\stylesheet1.css">
-  <link rel="stylesheet" href="stylesheets\Header.css">
+  <link rel="stylesheet" href="stylesheets/stylesheet1.css">
+  <link rel="stylesheet" href="stylesheets/Header.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">  
 </head>
 
@@ -44,8 +44,6 @@
         <div class="col-xs-12">
           <ul>
             <li>Name: </li>
-            <li>Country: </li>
-            <li>State: </li>
             <li>Email: </li>
             <li>Type of Account: </li>
           </ul>
@@ -100,7 +98,7 @@
                 <input type="text" class="form-control" id="hotelName" placeholder="Enter name">
               </div>
               <div class="form-group">
-                <label for="NumberofRooms">Number of Rooms</label>
+                <label for="numOfRooms">Number of Rooms</label>
                 <input type="text" class="form-control" id="numOfRooms" placeholder="Enter number">
               </div>
               <div class="form-group">
@@ -124,7 +122,7 @@
                 <input type="text" class="form-control" id="state" placeholder="Enter State">
               </div>
               <div class="form-group">
-                <label for="Country">Country</label>
+                <label for="country">Country</label>
                 <input type="text" class="form-control" id="country" placeholder="Enter Country">
               </div>
               <div class="form-group">
@@ -135,7 +133,7 @@
                 </select>
               </div>
               <div class="form-group">
-                <label for="Price">Price Per Night (AUD)</label>
+                <label for="price">Price Per Night (AUD)</label>
                 <input type="text" class="form-control" id="price">
               </div>
             </form>
@@ -147,10 +145,9 @@
 
       <!--UPLOAD IMG-->
       <div class="uploadImage">
-        <label for="upload">Upload Photo:</label>
+        <label>Upload Photo:</label>
         <div class="row">
           <div class="col-xs-12">  
-            <img id="output_image">
             <input type="file" accept="image/*" onchange="preview_image(event)">
           </div>
         </div>

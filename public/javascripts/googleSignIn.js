@@ -17,7 +17,7 @@ function onSignIn(googleUser) {
 
   getUserInfo({idtoken: id_token});
 
-};
+}
 
 function login(){
 	getUserInfo({username:document.getElementById('user').value, password:document.getElementById('pass').value});

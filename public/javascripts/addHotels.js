@@ -22,6 +22,6 @@ function addHotels() {
   if (hotelName !== "" && numOfRooms !== "" && number !== "" && street !== "" && suburb !== "" && city !== "" && state !== "" && country !== "" && price !== "") {
     xhttp.send(JSON.stringify({hotelName:hotelName,numOfRooms:numOfRooms,number:number,street:street,suburb:suburb,city:city,state:state,country:country,cancellations:cancellations,price:price}));
   } else {
-    alert("Missing field")
+    alert("Missing field");
   }
 }

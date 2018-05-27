@@ -27,7 +27,7 @@ function showAllHotels() {
     <h4>Price: $' + hotels[i].price + ' per night</h4> \
     <input class="book-button" type="button" value="Make Booking"> \
   </div> \
-</div>'
+</div>';
         if(i===0) {
           output = temp;
         } else {
