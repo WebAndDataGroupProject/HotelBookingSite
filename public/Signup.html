@@ -9,10 +9,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="stylesheets/stylesheet1.css">
-  <link rel="stylesheet" href="stylesheets/Header.css">
+  <link rel="stylesheet" href="stylesheets\stylesheet1.css">
+  <link rel="stylesheet" href="stylesheets\Header.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
-  <script src="javascripts/SignUp.js"></script>
+  <script src="javascripts\SignUp.js"></script>
 </head>
 
     <!-- This is just one element on the page so no need for a class -->
@@ -29,7 +29,7 @@
       </ul> 
       <!-- MY ACCOUNT -->
       <div class="dropdown">
-        <a href="AccountSettings.html" class="dropbtn" id="accountTest">My Account</a>
+        <a class="dropbtn" id="accountTest">My Account</a>
         <div class="dropdown-content">
           <a href="Login.html" id="login">Login</a>
           <a href="Signup.html" id="signup">Create Account</a>
@@ -50,36 +50,36 @@
       
       <div id="Individual" class="SignUpContent">
         <br>
-        <form class="formstyle">
+        <form id="IdForm" method="get" target="_blank" class="formstyle">
           <label>First name:</label><br>
-          <input type="text" name="firstname" value="e.g. Billy" style="font-size: 12px;color: darkgrey"><br>
+          <input onclick="dissapear_IFN()" id="Indfirstname" class="IformElement" type="text" name="firstname" value="e.g. Billy" style="font-size: 12px;color: darkgrey"><br>
           <label>Last name:</label><br>
-          <input type="text" name="lastname" value="e.g. Baxter" style="font-size: 12px;color: darkgrey"><br>
+          <input onclick="dissapear_ILN()" id="Indlastname" class="IformElement" type="text" name="lastname" value="e.g. Baxter" style="font-size: 12px;color: darkgrey"><br>
           <label>Email:</label><br>
-          <input type="text" name="email" value="e.g. billy.baxter@gmail.com" style="font-size: 12px;color: darkgrey"><br>
+          <input onclick="dissapear_IEM()" id="Indemail" class="IformElement" type="text" name="email" value="e.g. billy.baxter@gmail.com" style="font-size: 12px;color: darkgrey"><br>
           <label>Password</label><br>
-          <input type="text" name="password" style="font-size: 12px;color: darkgrey"><br>
+          <input type="password" class="IformElement" name="password" style="font-size: 12px;color: darkgrey"><br>
           <label>Repeat password:</label><br>
-          <input type="text" name="repeatpassword" style="font-size: 12px;color: darkgrey">
+          <input type="password" class="IformElement" name="repeatpassword" style="font-size: 12px;color: darkgrey">
           <br> <!-- Need to put on click so it dissappears-->
           <br>
-          <input type="submit" value="Submit" class="login-submit" style="font-size:100%;">
+          <input onclick="SubmitFormI()" type="submit" value="Submit" class="login-submit" style="font-size:100%;">
         </form>
       </div>
       
       <div id="Company" class="SignUpContent">
         <br>
-        <form class="formstyle">
+        <form action="SubmitFormC()" method="get" target="_blank" class="formstyle">
           <label>First name:</label><br>
-          <input type="text" name="firstname" value="e.g. Billy" style="font-size: 12px;color: darkgrey"><br>
+          <input onclick="dissapear_CFN()" id= "Cfirstname" type="text" name="firstname" value="e.g. Billy" style="font-size: 12px;color: darkgrey"><br>
           <label>Last name:</label><br>
-          <input type="text" name="lastname" value="e.g. Baxter" style="font-size: 12px;color: darkgrey"><br>
+          <input onclick="dissapear_CLN()" id= "Clastname" type="text" name="lastname" value="e.g. Baxter" style="font-size: 12px;color: darkgrey"><br>
           <label>Email:</label><br>
-          <input type="text" name="email" value="e.g. billy.baxter@gmail.com" style="font-size: 12px;color: darkgrey"><br>
+          <input onclick="dissapear_CEM()" id= "Cemail" type="text" name="email" value="e.g. billy.baxter@gmail.com" style="font-size: 12px;color: darkgrey"><br>
           <label>Password</label><br>
-          <input type="text" name="password" style="font-size: 12px;color: darkgrey"><br>
+          <input type="password" name="password" style="font-size: 12px;color: darkgrey"><br>
           <label>Repeat password:</label><br>
-          <input type="text" name="repeatpassword" style="font-size: 12px;color: darkgrey">
+          <input type="password" name="repeatpassword" style="font-size: 12px;color: darkgrey">
           <br> <!-- Need to put on click so it dissappears-->
           <br>
           <input type="submit" value="Submit" class="login-submit" style="font-size:100%;">
