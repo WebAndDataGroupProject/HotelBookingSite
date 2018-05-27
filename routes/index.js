@@ -12,6 +12,7 @@ router.get('/', function(req, res, next) {
 
 
 //Get Hotels list
+    // Get the hotels available
 router.get('/', function(req,res){
     req.pool.getConnection(function(err, connection){
         if(err) throw err;

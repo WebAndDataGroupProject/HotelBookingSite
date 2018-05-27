@@ -18,9 +18,9 @@ Create table Business_country ( Business_ID INT, Bus_Country INT, Bus_number_of_
 Create table Business_phone_number ( Business_ID INT, Business_contact_number INT, foreign key (Business_ID) references Business(Business_ID) on delete cascade );
 
 
+//Changed
 
-
-Create table Hotel ( Business_ID INT, Hotel_ID INT, Hotel_Name TEXT, Hotel_priceperroom INT, primary key (Hotel_ID), foreign key(Business_ID) references Business(Business_ID) on delete cascade );
+Create table Hotel ( Business_ID INT, Hotel_ID INT, Hotel_Name TEXT, Hotel_priceperroom float, primary key (Hotel_ID), foreign key(Business_ID) references Business(Business_ID) on delete cascade );
 
 Create table Hotel_Rooms ( Hotel_ID INT, Hotel_total_rooms INT, Hotel_rooms_booked INT, primary key(hotel_ID), foreign key(Hotel_ID) references Hotel(Hotel_ID) on DELETE cascade);
 
