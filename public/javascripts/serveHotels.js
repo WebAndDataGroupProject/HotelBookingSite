@@ -19,7 +19,7 @@ function showAllHotels() {
   <div class="rw-container"> \
     <button id="mapIbis-btn" class="fas fa-map-marker-alt mapButton"> Show on map</button> \
     <a href="#">Reviews</a> \
-    <p>Rooms available:' + hotels[i].numOfRooms + '10<p> \
+    <p>Rooms available:' + hotels[i].numOfRooms + '<p> \
   </div> \
   <div class="rw-container"> \
     <p>Rating: 4/5</p> \
