@@ -27,16 +27,6 @@ router.post('addCustomer', function(req, res){
     
 });
 
-
-
-
-
-
-
-
-
-
-
 // read array of hotels object from JSON file
 var fs = require('fs');
 
@@ -51,16 +41,13 @@ router.get('/hotels.json', function(req, res) {
   res.send(JSON.stringify(hotels));
 });
 
-// post request to hotels.json
+// send hotel data from client to server
 router.post('/hotels.json', function(req, res) {
   hotels.push({hotelName: req.body.hotelName, numOfRooms: req.body.numOfRooms, number: req.body.number, street: req.body.street, suburb: req.body.suburb, city: req.body.city, state: req.body.state, country: req.body.country, cancellations: req.body.cancellations, price: req.body.price});
   res.send();
 });
 
-
-
 // Google Sign-In details
-
 var CLIENT_ID = '525838695650-dfjbbapejsp89bjmbpeg34kbg7eglmkv.apps.googleusercontent.com';
 var {OAuth2Client} = require('google-auth-library');
 var client = new OAuth2Client(CLIENT_ID);
@@ -91,7 +78,7 @@ router.post('/user.json', function(req, res) {
             console.log(payload);
             // Get user's Google ID
             const userid = payload['sub'];
-            colsole.log(userid);
+            console.log(userid);
             for (var i=0; i<users.length; i++){
          
                 /* 
