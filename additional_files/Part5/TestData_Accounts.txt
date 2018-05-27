@@ -1,0 +1,6 @@
+1	1	2018-05-27	tinytom	12345	Customer
+2	2	2018-05-26	tinytom1	11	Customer
+3	3	2018-05-25	tinytom2	22	Customer
+4	4	2018-05-24	tinytom3	33	Customer
+5	5	2018-05-23	tinytom4	44	Customer
+6	6	2018-05-22	tinytom5	55	Business

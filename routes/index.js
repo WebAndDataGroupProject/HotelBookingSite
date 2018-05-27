@@ -7,8 +7,41 @@ router.get('/', function(req, res, next) {
 });
 
 
-/* Database */
+---------------/* Maria Database */-------------------
 
+
+
+//Get Hotels list
+router.get('/', function(req,res){
+    req.pool.getConnection(function(err, connection){
+        if(err) throw err;
+        
+        //Insert SQL COMMAND HERE
+        var sql = "";
+        
+        connection.query(sql, function(err, results){
+            // Release connection & OK Packet shown
+            connection.release();
+            console.log(results);
+            
+            //Send back to Client
+            res.send(results);
+            
+            
+        }); 
+    });       
+});
+
+
+// Get Customer Information
+
+
+// Search the hotels 
+
+
+
+
+// Add a customer to database
 router.post('addCustomer', function(req, res){
     console.log(req.body);
     
@@ -23,8 +56,32 @@ router.post('addCustomer', function(req, res){
             //Send back to client
             res.send(results.);
         });
-    })  
+    });  
     
+});
+
+
+
+
+// Update account details
+router.get('/', function(req,res){
+    req.pool.getConnection(function(err, connection){
+        if(err) throw err;
+        
+        //Insert SQL COMMAND HERE
+        var sql = "";
+        
+        connection.query(sql, [/*Insert Parameters here*/], function(err, results){
+            // Release connection & OK Packet shown
+            connection.release();
+            console.log(results);
+            
+            //Send back to Client
+            res.send(results);
+            
+            
+        }); 
+    });       
 });
 
 
@@ -33,9 +90,7 @@ router.post('addCustomer', function(req, res){
 
 
 
-
-
-
+/* JSON Object Database */
 
 // read array of hotels object from JSON file
 var fs = require('fs');

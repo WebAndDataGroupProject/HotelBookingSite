@@ -12,10 +12,12 @@ var app = express();
 //Config MySQL Database
 var mysqpl = require('mysql');
 
-var dbConnectionPool = 
+vardbConnectionPool= mysql.createPool({ host: 'localhost', user: 'root', password: 'WDC2018%',database: 'HotelManagement'});
     
     
 // Define the app.use function here
+app.use(function(req, res, next) { req.pool= dbConnectionPool; next(); }); 
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
