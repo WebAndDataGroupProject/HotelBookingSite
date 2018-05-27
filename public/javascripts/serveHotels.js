@@ -13,7 +13,7 @@ function showAllHotels() {
         var temp = 
 '<div class="rooms-container"> \
   <div class="ri-container"> \
-    <img class="ri-image" src="images/Ibis.jpg" style="width: 100%;height: 100%;border: none;" alt="Hotel image"> \
+    <img class="ri-image" src="images/'+hotels[i].piclink+'" style="width: 100%;height: 100%;border: none;" alt="Hotel image"> \
   </div> \
   <h4>' + hotels[i].hotelName + '</h4> \
   <div class="rw-container"> \
